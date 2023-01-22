@@ -1,0 +1,87 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %}
+	<title>Dashboard</title>
+{% endblock %}
+
+
+{% block body %}
+<!-- ============================================================== -->
+<!-- Start right Content here -->
+<!-- ============================================================== -->
+	<div class="main-content"> <div class="page-content">
+		<div class="container-fluid">
+
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<div class="card-header">
+                        <!--=== back button ====== -->
+                            <a href="{{ path('admin')}} " type="button" class="btn btn-primary waves-effect waves-light"> 
+                                Retour
+                            </a>
+                            <br>
+                            <br> 
+                        <!-- ============ Edit SHOP ================= -->
+                    <center>
+                        <H1> Modifier Votre Boutique </H1>
+                         
+                        <br>
+
+                        {{form_start(formShop)}}
+                            {{ form_label(formShop.name,"Nom ") }}
+                            {{ form_widget(formShop.name) }}
+                            <div style="color : red">
+                                {{ form_errors(formShop.name) }}
+                            </div>
+                            <br> 
+
+                            {{ form_label(formShop.description,"Description ") }}
+                            {{ form_widget(formShop.description, {'required' : false}) }}
+                            <div style="color : red">
+                                {{ form_errors(formShop.description) }}
+                            </div>
+                            <br> 
+
+                            {{ form_label(formShop.image,"Image ") }}
+                            {{ form_widget(formShop.image, {'required' : false}) }}
+                            <div style="color : red">
+                                {{ form_errors(formShop.image) }}
+                                {% if error is defined %}
+                                    Les extensions acceptés sont : png, jfif, jpeg, gif, jpg.
+                                {% endif %}
+                            </div>
+                            <br> 
+
+                            {{ form_label(formShop.map,"Google Map ") }}
+                            {{ form_widget(formShop.map, {'required' : false}) }}
+                            <div style="color : red">
+                                {{ form_errors(formShop.map) }}
+                            </div>
+                            <br> 
+
+                            {{ form_label(formShop.idShopCategory,"Catégorie ") }}
+                            {{ form_widget(formShop.idShopCategory) }}
+                            <div style="color : red">
+                                {{ form_errors(formShop.idShopCategory) }}
+                            </div>
+                            <br> 
+                        {{ form_end(formShop) }}
+                    </center>
+
+
+
+
+
+
+            </div>
+            </div>
+            </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+{% endblock %}

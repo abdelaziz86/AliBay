@@ -1,0 +1,66 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %}
+	<title>Catégories</title>
+{% endblock %}
+
+
+{% block body %}
+	<!-- ============================================================== -->
+	<!-- Start right Content here -->
+	<!-- ============================================================== -->
+		<div class="main-content"> <div class="page-content">
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col-12">
+						<div class="card">
+							<div
+								class="card-header">
+								<!--=== back button ====== -->
+								<a href="{{ path('categorieProduit')}} " type="button" class="btn btn-primary waves-effect waves-light">
+									Retour
+								</a>
+								<br>
+								<br>
+
+                            {% if edit == 0 %}
+
+								<h2 class="card-title" style="font-size : 20px ; ">Ajouter Catégorie</h2>
+								 
+
+								<!-- ============ TABLE CATEGS ================== -->
+                                {{form_start(formCategory)}}
+                                    {{ form_label(formCategory.name,"Nom ") }}
+                                    {{ form_widget(formCategory.name) }}
+                                    <div style="color : red">
+                                        {{ form_errors(formCategory.name) }}
+                                    </div>
+                                    <br> 
+                                {{form_end(formCategory)}}
+
+                            {% elseif edit == 1 %}
+                                <h2 class="card-title" style="font-size : 20px ; ">Modifier Catégorie</h2>
+								 
+
+								<!-- ============ TABLE CATEGS ================== -->
+                                {{form_start(formCategory)}}
+                                    {{ form_label(formCategory.name,"Nom ") }}
+                                    {{ form_widget(formCategory.name) }}
+                                    <div style="color : red">
+                                        {{ form_errors(formCategory.name) }}
+                                    </div>
+                                    <br> 
+                                {{form_end(formCategory)}}
+                            {% endif %}
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}

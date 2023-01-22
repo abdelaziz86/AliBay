@@ -1,0 +1,374 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+	{% for p in produits %}
+		<title> {{ p.name }} </title>
+	{% endfor %}
+{% endblock %}
+
+{% block body %}
+
+
+<!-- ========================= START CONTENT HERE ================================-->
+
+{% for p in produits %}
+<section id="content" style="margin-top : 50px ; ">
+	<center>
+	<div class="wrap-bread-crumb">
+		<div class="container container-v1">
+			<div class="row">
+				<div
+					class="col-sm-6">
+					<!-- /snippets/breadcrumb.liquid -->
+					
+
+					<div class="bread-crumb" > 
+							{% for s in shop %}
+								<a href="/{{s.name}}" style="background-color : black ; padding : 8px 12px 8px 12px ; color : white ; font-size : 18px ;  margin-right : 10px ;  ">
+									RETOUR
+								</a>
+							{% endfor %}
+
+							<a href="{{path('shop', {'id' : p.idShop.name })}}" title="Back to the frontpage">{{ p.idShop.name }}
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</a> 
+
+						
+						<strong>{{ p.name }}</strong>
+
+
+					</div>
+
+
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	</center>
+	<!-- End Bread Crumb -->
+
+
+
+
+	<div class="">
+		<div class="content-page container container-v1">
+			<div class="content-page-detail">
+				<div class="row">
+					<div class="col-lg-5 col-md-7 col-sm-12 col-12">
+						<div class="gallery-control">
+
+							<div class="row">
+								<div class="col-sm-2 gutter ">
+									<div class="js_prod_sub"></div>
+								</div>
+								<div class="col-sm-10 gutter">
+
+
+									<div class="img_thumb js_prod_main">
+
+										<div class=" ">
+											<img class=" engoj_img_main  w-100 img-fluid" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; margin-bottom : 20px; " src="{{asset('uploads/Produit/') ~ p.image}}" alt="{{ p.image }}"  />
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<!-- End Gallery -->
+					</div>
+					<div class="col-lg-4 col-md-5 col-sm-12 col-12 ">
+
+						<div class="detail-info" style=" padding-left: 0px; ">
+							<div class="relative">
+								<h2 class="product-title ">{{ p.name }}</h2>
+								<div class="product-price ">
+
+
+									<ins class="enj-product-price engoj_price_main" style="font-size : 24px !important ;">{{ p.price }} DT</ins>
+
+								</div>
+
+								<div class="wrap-rating">
+									<span class="shopify-product-reviews-badge" data-id="5362816090279"></span>
+								</div>
+
+
+								<div class="pd_summary">
+									<p class=" mb-0" style=" margin-top : 20px !important ; ">{{ p.description }}</p>
+								</div>
+
+
+								<form action="https://foodry-store-demo.myshopify.com/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm" class="cart clearfix">
+
+
+									<select name="id" id="productSelect" class="product-single__variants">
+
+
+										<option selected="selected" data-sku="" value="34886646431911">small - $6.00 USD</option>
+
+
+										<option data-sku="" value="34886646464679">Medium - $8.00 USD</option>
+
+									</select>
+								</select>
+
+
+								<div class="ciloe-size-guide relative">
+									<!--a href="#" class="btn_size_guide">Size guide</a-->
+									<div class="content_size_guide fixed delay05 text-center">
+										<div class="layout_size_guide text-center">
+											<div class="relative inline-block">
+
+												<img src="../../cdn.shopify.com/shopifycloud/shopify/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c.gif" class="img-responsive">
+ 
+												<div class="close_size_guide absolute">
+													<a href="#" class="set-16-svg fill-white">
+														<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewbox="0 0 298.667 298.667" style="enable-background:new 0 0 298.667 298.667;" xml:space="preserve">
+															<g>
+																<g>
+																	<polygon points="298.667,30.187 268.48,0 149.333,119.147 30.187,0 0,30.187 119.147,149.333 0,268.48 30.187,298.667     149.333,179.52 268.48,298.667 298.667,268.48 179.52,149.333   "></polygon>
+																</g>
+															</g>
+
+														</svg>
+													</a>
+												</div>
+											</div>
+
+											<img src="../../cdn.shopify.com/shopifycloud/shopify/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c.gif" class="img-responsive">
+
+										</div>
+									</div>
+
+								</div>
+								<div class="overlay"></div>
+								<style>
+									.ciloe-size-guide {
+										padding-top: 20px;
+									}
+									.ciloe-size-guide .close_size_guide {
+										top: 0;
+										right: -30px;
+									}
+									.ciloe-size-guide .close_size_guide a {
+										color: #fff;
+									}
+									.ciloe-size-guide .btn_size_guide {
+										font-size: 14px;
+										line-height: 24px;
+										padding-left: 31px;
+										font-weight: 400;
+										cursor: pointer;
+										background: url('../../cdn.shopify.com/s/files/1/0082/8509/3968/t/13/assets/Forma-11442.png?216455') no-repeat;
+										min-width: 150px;
+										background-position-y: 8px;
+										background-position-x: 0;
+										min-height: 42px;
+										display: inline-flex;
+										align-items: center;
+									}
+									.ciloe-size-guide .content_size_guide {
+										top: 0;
+										left: 0;
+										right: 0;
+										bottom: 0;
+										overflow-y: auto;
+										z-index: 999999;
+										display: inline-block;
+										transform: scale(0);
+									}
+									.ciloe-size-guide .content_size_guide .layout_size_guide {
+										max-width: 750px;
+										margin: 5% auto;
+									}
+									.ciloe-size-guide .content_size_guide.active {
+										transform: scale(1);
+									}
+									.ciloe-size-guide .content_size_guide img {
+										margin: 0 auto;
+									}
+									@media(max-width:767px) {
+										.ciloe-size-guide .content_size_guide .layout_size_guide {
+											max-width: 290px;
+										}
+									}
+									@media(min-width:767px) and(max-width:992px) {
+										.ciloe-size-guide .content_size_guide .layout_size_guide {
+											max-width: 600px;
+										}
+									}
+									.overlay {
+										position: fixed;
+										width: 100%;
+										height: 100%;
+										top: 0;
+										right: 0;
+										left: 0;
+										bottom: 0;
+										z-index: 30;
+										background: rgba(29, 29, 31, 0.6);
+										cursor: pointer;
+										opacity: 0;
+										visibility: hidden;
+										transition: all 0.3s ease;
+									}
+									.overlay.active {
+										opacity: 1;
+										visibility: visible;
+									}
+								</style>
+
+
+								<!--Swatch Variant -->
+
+
+								<style>
+									rel="stylesheet"
+									type="text/css"
+									.proVariants .selector-wrapper:nth-child(1) {
+										display: none;
+									}
+									.maxus-productdetail__options:not(:last-child) {
+										margin-right: 20px;
+									}
+								</style>
+
+
+								<div class="maxus-productdetail__options">
+
+									<div class="swatch clearfix  align-center flex engoc-flex-wrap" data-option-index="0">
+										<p class="text-uppercase title_variant">Article
+										</p>
+
+
+										<div data-value="small" data-style="square" class="maxus-color none small available">
+											<input id="swatch-0-small" type="radio" name="option-0" value="small" checked/>
+
+
+											<label class="variant_other" for="swatch-0-small">
+												{{ p.idCategoryProduit.name }}
+											</label>
+
+
+										</div>
+
+
+										<script>
+											jQuery('.swatch[data-option-index="0"] .small').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+										</script>
+
+
+										<div data-value="Medium" data-style="square" class="maxus-color none medium available">
+											<input id="swatch-0-medium" type="radio" name="option-0" value="Medium"/>
+
+
+											<label class="variant_other" for="swatch-0-medium">
+												{{ p.idShop.name }}
+											</label>
+
+
+										</div>
+
+
+										<script>
+											jQuery('.swatch[data-option-index="0"] .medium').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+										</script>
+
+
+									</div>
+								</div>
+
+
+								<!--End Swatch Variant -->
+
+								<!-- Add to cart & quantity -->
+
+
+								<div class="btn-action detail-attr qty-cart">
+
+									<div class="">
+										<!--input type="number" size="4" title="Qty" value="1" min="1" id="Quantity" name="quantity"/-->
+										<H5>
+											Disponible : {% if p.disponible == 1 %}
+																	<span style="color : #47D847 ; ">Oui </span>
+																	
+																{% else %}
+																	<span style="color : red ; ">Non</span>
+																{% endif %}
+										</H5>
+										<H5 style="color : green ; ">
+											Livraison : Non Disponible
+										</H5>
+									</div>
+
+									<!--button type="submit" class="shop-button enj-add-to-cart-btn engoj-btn-addtocart">
+										Add to Cart
+									</button-->
+								</div>
+								<!-- End add to cart & quantity -->
+								 
+
+
+							</form>
+
+
+							 
+
+
+							<ul class="product-meta-info">
+
+
+								<!--Check product in or out of stock -->
+								<!--                       <li>
+								                        <div class="item-product-meta-info product-available-info">
+								                        <label>Availability:</label>
+								                        <span>In stock</span>
+								                        </div>
+								                        </li> -->
+								<!--End check -->
+
+
+									<li>
+										<div class="item-product-meta-info product-category-info"> <label>Recommendations :</label>
+
+										<a href="/{{p.idShop.name}}?categ={{ p.idCategoryProduit.name }}">{{ p.idCategoryProduit.name }}
+										</a> 
+
+									</div>
+								</li>
+
+
+							</ul>
+
+						</div>
+					</div>
+
+				</div>
+
+
+				 
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+</div></section>
+
+
+<div style="height : 200px ; "></div>
+
+
+ 
+
+
+
+
+{% endfor %}
+
+{% endblock %}

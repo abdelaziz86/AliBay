@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://foodry-store-demo.myshopify.com/blogs/news.atom</id>
+  <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/blogs/news"/>
+  <link rel="self" type="application/atom+xml" href="https://foodry-store-demo.myshopify.com/blogs/news/tagged/food.atom"/>
+  <title>Foodry - Fast Food &amp; Restaurant Responsive Shopify Theme - News</title>
+  <updated>2020-03-17T00:58:00-04:00</updated>
+  <author>
+    <name>Foodry - Fast Food &amp; Restaurant Responsive Shopify Theme</name>
+  </author>
+  <entry>
+    <id>https://foodry-store-demo.myshopify.com/blogs/news/do-not-overfeed-your-pet</id>
+    <published>2020-03-17T00:48:00-04:00</published>
+    <updated>2020-06-21T23:40:54-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/blogs/news/do-not-overfeed-your-pet"/>
+    <title>This Is How We Baking Our Pizza</title>
+    <author>
+      <name>foodry-store-demo Admin</name>
+    </author>
+    <content type="html">
+      <![CDATA[<div class="vc_row wpb_row vc_row-fluid">
+<div class="wpb_column vc_column_container vc_col-sm-12">
+<div class="vc_column-inner">
+<div class="wpb_wrapper">
+<h3 class="vc_custom_heading vc_custom_1547171840873 vc_custom_1547171840873">Where can I get some?</h3>
+<div class="wpb_text_column wpb_content_element ">
+<div class="wpb_wrapper">
+<p>The new site provides a closer look at our agency – what connects us, what excites us, and ultimately what best represents our culture. We’ve included in-depth details of the key values that drive our agency forward, as well as a background on our team members, fun facts about our agency, and a new culture reel that surfaces our collective vision.</p>
+<p>Etiam risus diam, porttitor vitae ultrices quis, dapibus id dolor.Morbi venenatis lacinia rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur. Aliquam erat volutpat. Nunc eu nibh nulla, id cursus arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam at velit nisl. Aenean vitae est nisl. Cras molestie molestie nisl vel imperdiet. Donec vel mi sem.</p>
+</div>
+</div>
+<div class="wpb_raw_code wpb_content_element wpb_raw_html ">
+<div class="wpb_wrapper">
+<blockquote>
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id estlaborum. Sed ut perspiciatis<span> </span><span>ROBERT SMITH</span></p>
+</blockquote>
+</div>
+</div>
+<div class="wpb_text_column wpb_content_element ">
+<div class="wpb_wrapper">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="vc_row wpb_row vc_row-fluid">
+<div class="wpb_column vc_column_container vc_col-sm-12">
+<div class="vc_column-inner">
+<div class="wpb_wrapper">
+<div class="urus-products  urus_custom_5cd8e2d886cf9  vc_custom_1553495983427 urus_vc_custom_5cd8e2d887d86 vc_custom_1553495983427  nav-center">
+<div class="slide-inner">
+<div class="product-list-owl swiper-container urus-swiper nav-center swiper-container-initialized swiper-container-horizontal swiper-initialized" data-slick='{"arrows":true,"slidesMargin":30,"dots":false,"infinite":false,"fade":false,"speed":300,"slidesToShow":3,"rows":1}' data-responsive='[{"breakpoint":1500,"settings":{"slidesToShow":3}},{"breakpoint":1200,"settings":{"slidesToShow":3}},{"breakpoint":992,"settings":{"slidesToShow":2}},{"breakpoint":768,"settings":{"slidesToShow":2,"slidesMargin":15}},{"breakpoint":480,"settings":{"slidesToShow":2,"slidesMargin":15}}]' data-dots-style="" data-thumb="product-thumb" data-height="539">
+<div class="swiper-wrapper">
+<div class="swiper-slide swiper-slide-visible swiper-slide-active">
+<div class="product-item recent-product default rows-space-0 post-5288 product type-product status-publish has-post-thumbnail product_cat-clothing product_cat-coats-jackets product_cat-mens product-brand-hm first instock shipping-taxable purchasable product-type-simple">
+<div class="product-inner">
+<div class="product-thumb images">
+<div class="flashs"></div>
+<div class="thumb-link">
+<div class="images">
+<figure class="main-thumb" data-id="5288"></figure>
+</div>
+</div>
+</div>
+<div class="product-info">
+<div class="price-wrap"><span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span></span></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="product-item recent-product default rows-space-0 post-6879 product type-product status-publish has-post-thumbnail product_cat-accessories product_cat-bag-wm product_cat-bags product_cat-mens product_cat-womens product-brand-lacote last instock shipping-taxable product-type-external">
+<div class="product-inner">
+<div class="product-info"></div>
+</div>
+</div>
+</div>
+</div>
+<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+</div>
+<div class="slick-arrow next" role="button" aria-label="Next slide" aria-disabled="false" tabindex="0"><i class="urus-icon urus-icon-next"></i></div>
+<div class="slick-arrow prev swiper-button-disabled" role="button" aria-label="Previous slide" aria-disabled="true" tabindex="0"><i class="urus-icon urus-icon-prev"></i></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="vc_row wpb_row vc_row-fluid">
+<div class="wpb_column vc_column_container vc_col-sm-12">
+<div class="vc_column-inner">
+<div class="wpb_wrapper">
+<h3 class="vc_custom_heading vc_custom_1547171873932 vc_custom_1547171873932">What is Lorem Ipsum?</h3>
+<div class="wpb_text_column wpb_content_element ">
+<div class="wpb_wrapper">
+<p>The new site provides a closer look at our agency – what connects us, what excites us, and ultimately what best represents our culture. We’ve included in-depth details of the key values that drive our agency forward, as well as a background on our team members, fun facts about our agency, and a new culture reel that surfaces our collective vision.</p>
+<p>Etiam risus diam, porttitor vitae ultrices quis, dapibus id dolor.Morbi venenatis lacinia rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur. Aliquam erat volutpat. Nunc eu nibh nulla, id cursus arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam at velit nisl. Aenean vitae est nisl. Cras molestie molestie nisl vel imperdiet. Donec vel mi sem.</p>
+</div>
+</div>
+<div class="wpb_text_column wpb_content_element ">
+<div class="wpb_wrapper">
+<p>The new site provides a closer look at our agency – what connects us, what excites us, and ultimately what best represents our culture. We’ve included in-depth details of the key values that drive our agency forward, as well as a background on our team members, fun facts about our agency, and a new culture reel that surfaces our collective vision.</p>
+<p>Etiam risus diam, porttitor vitae ultrices quis, dapibus id dolor.Morbi venenatis lacinia rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur. Aliquam erat volutpat. Nunc eu nibh nulla, id cursus arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam at velit nisl. Aenean vitae est nisl. Cras molestie molestie nisl vel imperdiet. Donec vel mi sem.</p>
+</div>
+</div>
+<div class="wpb_text_column wpb_content_element ">
+<div class="wpb_wrapper">
+<p>The new site provides a closer look at our agency – what connects us, what excites us, and ultimately what best represents our culture. We’ve included in-depth details of the key values that drive our agency forward, as well as a background on our team members, fun facts about our agency, and a new culture reel that surfaces our collective vision.</p>
+<p>Etiam risus diam, porttitor vitae ultrices quis, dapibus id dolor.Morbi venenatis lacinia rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur. Aliquam erat volutpat. Nunc eu nibh nulla, id cursus arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam at velit nisl. Aenean vitae est nisl. Cras molestie molestie nisl vel imperdiet. Donec vel mi sem.</p>
+</div>
+</div>
+<div class="wpb_text_column wpb_content_element ">
+<div class="wpb_wrapper">
+<p>The new site provides a closer look at our agency – what connects us, what excites us, and ultimately what best represents our culture. We’ve included in-depth details of the key values that drive our agency forward, as well as a background on our team members, fun facts about our agency, and a new culture reel that surfaces our collective vision.</p>
+<p>Etiam risus diam, porttitor vitae ultrices quis, dapibus id dolor.Morbi venenatis lacinia rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur. Aliquam erat volutpat. Nunc eu nibh nulla, id cursus arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam at velit nisl. Aenean vitae est nisl. Cras molestie molestie nisl vel imperdiet. Donec vel mi sem.</p>
+</div>
+</div>
+<div class="wpb_text_column wpb_content_element ">
+<div class="wpb_wrapper">
+<p>The new site provides a closer look at our agency – what connects us, what excites us, and ultimately what best represents our culture. We’ve included in-depth details of the key values that drive our agency forward, as well as a background on our team members, fun facts about our agency, and a new culture reel that surfaces our collective vision.</p>
+<p>Etiam risus diam, porttitor vitae ultrices quis, dapibus id dolor.Morbi venenatis lacinia rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur. Aliquam erat volutpat. Nunc eu nibh nulla, id cursus arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam at velit nisl. Aenean vitae est nisl. Cras molestie molestie nisl vel imperdiet. Donec vel mi sem.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="gtx-trans" style="position: absolute; left: 239px; top: 4280.05px;">
+<div class="gtx-trans-icon"></div>
+</div>]]>
+    </content>
+  </entry>
+</feed>

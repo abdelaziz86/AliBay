@@ -1,0 +1,84 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %}
+	<title>Catégories</title>
+{% endblock %}
+
+
+{% block body %}
+<!-- ============================================================== -->
+<!-- Start right Content here -->
+<!-- ============================================================== -->
+	<div class="main-content"> <div class="page-content">
+		<div class="container-fluid">
+
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<div
+							class="card-header">
+							<!--=== back button ====== -->
+							<a href="{{ path('admin')}} " type="button" class="btn btn-primary waves-effect waves-light">
+								Retour
+							</a>
+                            <a href="{{ path('modifierCategory')}} " type="button" class="btn btn-success waves-effect waves-light"> 
+                                Ajouter 
+                            </a> 
+							<br>
+							<br>
+
+                            <h2 class="card-title" style="font-size : 20px ; ">Catégories</h2>
+                            <br>                    
+
+                            <!-- ============ TABLE CATEGS ================== -->
+                            <div class="card-body">
+                            <table id="datatable" class="table table-bordered dt-responsive nowrap w-100">
+                                <thead>
+                                    <tr style="font-size : 16px">
+                                        <th>Nom</th> 
+                                        <th>Action</th>
+
+                                    </tr>
+                                </thead>
+
+
+                                <tbody>
+                                    {% for c in categories %}
+                                        <tr style="font-weight:bold ; color : black ">
+                                            <td>{{c.name}}</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-link font-size-16 shadow-none py-0 text-muted dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="bx bx-dots-horizontal-rounded"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                        <li><a class="dropdown-item" href={{"/editCategory?id=" ~ c.id}}>Modifier</a></li>
+                                                        <li><a class="dropdown-item" href={{"/DeleteCategory?id=" ~ c.id}} > Supprimer</a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                    {% endfor %}
+                                </tbody>
+
+                            </table>
+                            </div>
+
+
+
+
+
+
+            </div>
+            </div>
+            </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+{% endblock %}

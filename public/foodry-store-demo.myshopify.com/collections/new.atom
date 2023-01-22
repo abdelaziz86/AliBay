@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://foodry-store-demo.myshopify.com/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://foodry-store-demo.myshopify.com/collections/new.atom"/>
+  <title>Foodry - Fast Food &amp; Restaurant Responsive Shopify Theme</title>
+  <updated>2020-06-21T21:59:42-04:00</updated>
+  <author>
+    <name>Foodry - Fast Food &amp; Restaurant Responsive Shopify Theme</name>
+  </author>
+  <entry>
+    <id>https://foodry-store-demo.myshopify.com/products/5362816417959</id>
+    <published>2020-06-21T21:59:42-04:00</published>
+    <updated>2020-06-21T21:59:42-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/products/wilderness-dry-dog-food"/>
+    <title>Chese Classic Burger</title>
+    <s:type></s:type>
+    <s:vendor>Foodry</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0414/0069/6999/products/1_4aed6ba2-d3cd-492f-94e1-1bd7e81f9ae1.jpg?v=1592971407"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Foodry<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            6.00 - 10.00
+            <a href="https://foodry-store-demo.myshopify.com/products/wilderness-dry-dog-food">(3 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class=" py-4">
+<div class="row">
+<div class="col-md-6"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description1.jpg?v=1592971240" alt=""></div>
+<div class="col-md-6 info2">
+<div>
+<h3>Calf-length dress in airy, textured cotton fabric with a printed pattern</h3>
+<p>Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id, varius estibulum ante ipsum primis in faucibus</p>
+</div>
+<a><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description2.jpg?v=1592971240" alt=""></a>
+</div>
+</div>
+</div>
+<div class=" py-4 des-info">
+<div class="text-center">
+<h3>Product Details</h3>
+<p>Inspired by traditional blockprinting techniques in India, our own in-house design is the vibrant pattern that every closet needs. That's why we crafted our party standout tiered maxi dress in this royal blue-and-yellow print: It's lightweight, lined and will look great at all your most festive summer events.</p>
+</div>
+</div>
+<a class="d-block py-3"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description3.jpg?v=1592971239" alt=""> </a></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$5-$10</s:tag>
+    <s:tag>Big</s:tag>
+    <s:tag>Medium</s:tag>
+    <s:tag>small</s:tag>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362816417959</id>
+      <title>small</title>
+      <s:price currency="USD">6.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362816417959</id>
+      <title>Medium</title>
+      <s:price currency="USD">8.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362816417959</id>
+      <title>Big</title>
+      <s:price currency="USD">10.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://foodry-store-demo.myshopify.com/products/5362816221351</id>
+    <published>2020-06-21T21:59:37-04:00</published>
+    <updated>2020-06-21T21:59:37-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/products/wet-cat-food"/>
+    <title>Double Classic Burger</title>
+    <s:type></s:type>
+    <s:vendor>Foodry</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0414/0069/6999/products/5_ce86bc89-6fc4-4053-89e2-687c50d693fa.jpg?v=1592973729"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Foodry<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            8.00 - 15.00
+            <a href="https://foodry-store-demo.myshopify.com/products/wet-cat-food">(3 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class=" py-4">
+<div class="row">
+<div class="col-md-6"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description1.jpg?v=1592971240" alt=""></div>
+<div class="col-md-6 info2">
+<div>
+<h3>Calf-length dress in airy, textured cotton fabric with a printed pattern</h3>
+<p>Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id, varius estibulum ante ipsum primis in faucibus</p>
+</div>
+<a><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description2.jpg?v=1592971240" alt=""></a>
+</div>
+</div>
+</div>
+<div class=" py-4 des-info">
+<div class="text-center">
+<h3>Product Details</h3>
+<p>Inspired by traditional blockprinting techniques in India, our own in-house design is the vibrant pattern that every closet needs. That's why we crafted our party standout tiered maxi dress in this royal blue-and-yellow print: It's lightweight, lined and will look great at all your most festive summer events.</p>
+</div>
+</div>
+<a class="d-block py-3"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description3.jpg?v=1592971239" alt=""> </a></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$10-$15</s:tag>
+    <s:tag>$5-$10</s:tag>
+    <s:tag>Big</s:tag>
+    <s:tag>Medium</s:tag>
+    <s:tag>small</s:tag>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362816221351</id>
+      <title>small</title>
+      <s:price currency="USD">8.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362816221351</id>
+      <title>Medium</title>
+      <s:price currency="USD">13.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362816221351</id>
+      <title>Big</title>
+      <s:price currency="USD">15.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://foodry-store-demo.myshopify.com/products/5362816090279</id>
+    <published>2020-06-21T21:59:33-04:00</published>
+    <updated>2020-06-21T21:59:33-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/products/wellbeloved-dry-dog-food"/>
+    <title>French fries</title>
+    <s:type></s:type>
+    <s:vendor>Foodry</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0414/0069/6999/products/6_6bfb9c34-19e0-447e-9205-24ee20def0ec.jpg?v=1592973853"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Foodry<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            6.00 - 8.00
+            <a href="https://foodry-store-demo.myshopify.com/products/wellbeloved-dry-dog-food">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class=" py-4">
+<div class="row">
+<div class="col-md-6"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description1.jpg?v=1592971240" alt=""></div>
+<div class="col-md-6 info2">
+<div>
+<h3>Calf-length dress in airy, textured cotton fabric with a printed pattern</h3>
+<p>Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id, varius estibulum ante ipsum primis in faucibus</p>
+</div>
+<a><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description2.jpg?v=1592971240" alt=""></a>
+</div>
+</div>
+</div>
+<div class=" py-4 des-info">
+<div class="text-center">
+<h3>Product Details</h3>
+<p>Inspired by traditional blockprinting techniques in India, our own in-house design is the vibrant pattern that every closet needs. That's why we crafted our party standout tiered maxi dress in this royal blue-and-yellow print: It's lightweight, lined and will look great at all your most festive summer events.</p>
+</div>
+</div>
+<a class="d-block py-3"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description3.jpg?v=1592971239" alt=""> </a></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$0-$5</s:tag>
+    <s:tag>$5-$10</s:tag>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362816090279</id>
+      <title>small</title>
+      <s:price currency="USD">6.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362816090279</id>
+      <title>Medium</title>
+      <s:price currency="USD">8.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://foodry-store-demo.myshopify.com/products/5362816024743</id>
+    <published>2020-06-21T21:59:29-04:00</published>
+    <updated>2020-06-21T21:59:29-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/products/veterinary-diet-canine"/>
+    <title>fried chicken</title>
+    <s:type></s:type>
+    <s:vendor>Foodry</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0414/0069/6999/products/23.jpg?v=1593239742"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Foodry<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            19.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class=" py-4">
+<div class="row">
+<div class="col-md-6"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description1.jpg?v=1592971240" alt=""></div>
+<div class="col-md-6 info2">
+<div>
+<h3>Calf-length dress in airy, textured cotton fabric with a printed pattern</h3>
+<p>Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id, varius estibulum ante ipsum primis in faucibus</p>
+</div>
+<a><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description2.jpg?v=1592971240" alt=""></a>
+</div>
+</div>
+</div>
+<div class=" py-4 des-info">
+<div class="text-center">
+<h3>Product Details</h3>
+<p>Inspired by traditional blockprinting techniques in India, our own in-house design is the vibrant pattern that every closet needs. That's why we crafted our party standout tiered maxi dress in this royal blue-and-yellow print: It's lightweight, lined and will look great at all your most festive summer events.</p>
+</div>
+</div>
+<a class="d-block py-3"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description3.jpg?v=1592971239" alt=""> </a></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$15-$20</s:tag>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362816024743</id>
+      <title>Default Title</title>
+      <s:price currency="USD">19.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://foodry-store-demo.myshopify.com/products/5362815926439</id>
+    <published>2020-06-21T21:59:25-04:00</published>
+    <updated>2020-06-21T21:59:25-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/products/royal-canin-medium-1"/>
+    <title>Pizza</title>
+    <s:type></s:type>
+    <s:vendor>Foodry</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0414/0069/6999/products/20.jpg?v=1592974482"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Foodry<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            10.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class=" py-4">
+<div class="row">
+<div class="col-md-6"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description1.jpg?v=1592971240" alt=""></div>
+<div class="col-md-6 info2">
+<div>
+<h3>Calf-length dress in airy, textured cotton fabric with a printed pattern</h3>
+<p>Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id, varius estibulum ante ipsum primis in faucibus</p>
+</div>
+<a><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description2.jpg?v=1592971240" alt=""></a>
+</div>
+</div>
+</div>
+<div class=" py-4 des-info">
+<div class="text-center">
+<h3>Product Details</h3>
+<p>Inspired by traditional blockprinting techniques in India, our own in-house design is the vibrant pattern that every closet needs. That's why we crafted our party standout tiered maxi dress in this royal blue-and-yellow print: It's lightweight, lined and will look great at all your most festive summer events.</p>
+</div>
+</div>
+<a class="d-block py-3"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description3.jpg?v=1592971239" alt=""> </a></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$5-$10</s:tag>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362815926439</id>
+      <title>Default Title</title>
+      <s:price currency="USD">10.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://foodry-store-demo.myshopify.com/products/5362815828135</id>
+    <published>2020-06-21T21:59:21-04:00</published>
+    <updated>2020-06-21T21:59:21-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/products/royal-canin-maxi-adult"/>
+    <title>Pizza 2</title>
+    <s:type></s:type>
+    <s:vendor>Foodry</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0414/0069/6999/products/17.jpg?v=1592974597"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Foodry<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            8.00 - 14.00
+            <a href="https://foodry-store-demo.myshopify.com/products/royal-canin-maxi-adult">(3 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class=" py-4">
+<div class="row">
+<div class="col-md-6"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description1.jpg?v=1592971240" alt=""></div>
+<div class="col-md-6 info2">
+<div>
+<h3>Calf-length dress in airy, textured cotton fabric with a printed pattern</h3>
+<p>Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id, varius estibulum ante ipsum primis in faucibus</p>
+</div>
+<a><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description2.jpg?v=1592971240" alt=""></a>
+</div>
+</div>
+</div>
+<div class=" py-4 des-info">
+<div class="text-center">
+<h3>Product Details</h3>
+<p>Inspired by traditional blockprinting techniques in India, our own in-house design is the vibrant pattern that every closet needs. That's why we crafted our party standout tiered maxi dress in this royal blue-and-yellow print: It's lightweight, lined and will look great at all your most festive summer events.</p>
+</div>
+</div>
+<a class="d-block py-3"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description3.jpg?v=1592971239" alt=""> </a></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$10-$15</s:tag>
+    <s:tag>$5-$10</s:tag>
+    <s:tag>Big</s:tag>
+    <s:tag>Medium</s:tag>
+    <s:tag>small</s:tag>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362815828135</id>
+      <title>small</title>
+      <s:price currency="USD">8.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362815828135</id>
+      <title>Medium</title>
+      <s:price currency="USD">12.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362815828135</id>
+      <title>Big</title>
+      <s:price currency="USD">14.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://foodry-store-demo.myshopify.com/products/5362815697063</id>
+    <published>2020-06-21T21:59:16-04:00</published>
+    <updated>2020-06-21T21:59:16-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/products/royal-canin-maxi-5"/>
+    <title>The Deli Taco Crunchy</title>
+    <s:type></s:type>
+    <s:vendor>Foodry</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0414/0069/6999/products/11.jpg?v=1592974710"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Foodry<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            8.00 - 10.00
+            <a href="https://foodry-store-demo.myshopify.com/products/royal-canin-maxi-5">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class=" py-4">
+<div class="row">
+<div class="col-md-6"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description1.jpg?v=1592971240" alt=""></div>
+<div class="col-md-6 info2">
+<div>
+<h3>Calf-length dress in airy, textured cotton fabric with a printed pattern</h3>
+<p>Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id, varius estibulum ante ipsum primis in faucibus</p>
+</div>
+<a><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description2.jpg?v=1592971240" alt=""></a>
+</div>
+</div>
+</div>
+<div class=" py-4 des-info">
+<div class="text-center">
+<h3>Product Details</h3>
+<p>Inspired by traditional blockprinting techniques in India, our own in-house design is the vibrant pattern that every closet needs. That's why we crafted our party standout tiered maxi dress in this royal blue-and-yellow print: It's lightweight, lined and will look great at all your most festive summer events.</p>
+</div>
+</div>
+<a class="d-block py-3"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description3.jpg?v=1592971239" alt=""> </a></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$5-$10</s:tag>
+    <s:tag>Medium</s:tag>
+    <s:tag>small</s:tag>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362815697063</id>
+      <title>small</title>
+      <s:price currency="USD">8.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362815697063</id>
+      <title>Medium</title>
+      <s:price currency="USD">10.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://foodry-store-demo.myshopify.com/products/5362815598759</id>
+    <published>2020-06-21T21:59:12-04:00</published>
+    <updated>2020-06-21T21:59:12-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/products/royal-canin-exigent-cats-2"/>
+    <title>French fries Video</title>
+    <s:type></s:type>
+    <s:vendor>Foodry</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0414/0069/6999/products/22.jpg?v=1593231580"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Foodry<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            6.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class=" py-4">
+<div class="row">
+<div class="col-md-6"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description1.jpg?v=1592971240" alt=""></div>
+<div class="col-md-6 info2">
+<div>
+<h3>Calf-length dress in airy, textured cotton fabric with a printed pattern</h3>
+<p>Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id, varius estibulum ante ipsum primis in faucibus</p>
+</div>
+<a><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description2.jpg?v=1592971240" alt=""></a>
+</div>
+</div>
+</div>
+<div class=" py-4 des-info">
+<div class="text-center">
+<h3>Product Details</h3>
+<p>Inspired by traditional blockprinting techniques in India, our own in-house design is the vibrant pattern that every closet needs. That's why we crafted our party standout tiered maxi dress in this royal blue-and-yellow print: It's lightweight, lined and will look great at all your most festive summer events.</p>
+</div>
+</div>
+<a class="d-block py-3"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description3.jpg?v=1592971239" alt=""> </a></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$5-$10</s:tag>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362815598759</id>
+      <title>Default Title</title>
+      <s:price currency="USD">6.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://foodry-store-demo.myshopify.com/products/5362815467687</id>
+    <published>2020-06-21T21:59:10-04:00</published>
+    <updated>2020-06-21T21:59:10-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/products/royal-canin-exigent-cats-1"/>
+    <title>Pizza</title>
+    <s:type></s:type>
+    <s:vendor>Foodry</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0414/0069/6999/products/15.jpg?v=1592980571"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Foodry<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            10.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class=" py-4">
+<div class="row">
+<div class="col-md-6"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description1.jpg?v=1592971240" alt=""></div>
+<div class="col-md-6 info2">
+<div>
+<h3>Calf-length dress in airy, textured cotton fabric with a printed pattern</h3>
+<p>Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id, varius estibulum ante ipsum primis in faucibus</p>
+</div>
+<a><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description2.jpg?v=1592971240" alt=""></a>
+</div>
+</div>
+</div>
+<div class=" py-4 des-info">
+<div class="text-center">
+<h3>Product Details</h3>
+<p>Inspired by traditional blockprinting techniques in India, our own in-house design is the vibrant pattern that every closet needs. That's why we crafted our party standout tiered maxi dress in this royal blue-and-yellow print: It's lightweight, lined and will look great at all your most festive summer events.</p>
+</div>
+</div>
+<a class="d-block py-3"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description3.jpg?v=1592971239" alt=""> </a></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$5-$10</s:tag>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362815467687</id>
+      <title>Default Title</title>
+      <s:price currency="USD">10.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://foodry-store-demo.myshopify.com/products/5362815369383</id>
+    <published>2020-06-21T21:59:07-04:00</published>
+    <updated>2020-06-21T21:59:07-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/products/royal-canin-exigent-cats"/>
+    <title>The Deli Taco Soft</title>
+    <s:type></s:type>
+    <s:vendor>Foodry</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0414/0069/6999/products/12_f81db2d0-9dca-4b73-8be2-8769e27d98b5.jpg?v=1592980620"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Foodry<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            15.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class=" py-4">
+<div class="row">
+<div class="col-md-6"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description1.jpg?v=1592971240" alt=""></div>
+<div class="col-md-6 info2">
+<div>
+<h3>Calf-length dress in airy, textured cotton fabric with a printed pattern</h3>
+<p>Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id, varius estibulum ante ipsum primis in faucibus</p>
+</div>
+<a><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description2.jpg?v=1592971240" alt=""></a>
+</div>
+</div>
+</div>
+<div class=" py-4 des-info">
+<div class="text-center">
+<h3>Product Details</h3>
+<p>Inspired by traditional blockprinting techniques in India, our own in-house design is the vibrant pattern that every closet needs. That's why we crafted our party standout tiered maxi dress in this royal blue-and-yellow print: It's lightweight, lined and will look great at all your most festive summer events.</p>
+</div>
+</div>
+<a class="d-block py-3"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description3.jpg?v=1592971239" alt=""> </a></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$10-$15</s:tag>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362815369383</id>
+      <title>Default Title</title>
+      <s:price currency="USD">15.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://foodry-store-demo.myshopify.com/products/5362815303847</id>
+    <published>2020-06-21T21:59:04-04:00</published>
+    <updated>2020-06-21T21:59:04-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/products/rocco-classic"/>
+    <title>Pizza</title>
+    <s:type></s:type>
+    <s:vendor>Foodry</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0414/0069/6999/products/19.jpg?v=1592980777"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Foodry<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            19.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class=" py-4">
+<div class="row">
+<div class="col-md-6"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description1.jpg?v=1592971240" alt=""></div>
+<div class="col-md-6 info2">
+<div>
+<h3>Calf-length dress in airy, textured cotton fabric with a printed pattern</h3>
+<p>Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id, varius estibulum ante ipsum primis in faucibus</p>
+</div>
+<a><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description2.jpg?v=1592971240" alt=""></a>
+</div>
+</div>
+</div>
+<div class=" py-4 des-info">
+<div class="text-center">
+<h3>Product Details</h3>
+<p>Inspired by traditional blockprinting techniques in India, our own in-house design is the vibrant pattern that every closet needs. That's why we crafted our party standout tiered maxi dress in this royal blue-and-yellow print: It's lightweight, lined and will look great at all your most festive summer events.</p>
+</div>
+</div>
+<a class="d-block py-3"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description3.jpg?v=1592971239" alt=""> </a></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$15-$20</s:tag>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362815303847</id>
+      <title>Default Title</title>
+      <s:price currency="USD">19.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://foodry-store-demo.myshopify.com/products/5362815238311</id>
+    <published>2020-06-21T21:59:02-04:00</published>
+    <updated>2020-06-21T21:59:02-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/products/pro-plan-puppy"/>
+    <title>Double Classic Burger Variable</title>
+    <s:type></s:type>
+    <s:vendor>Foodry</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0414/0069/6999/products/5.jpg?v=1592980832"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Foodry<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            12.00 - 18.00
+            <a href="https://foodry-store-demo.myshopify.com/products/pro-plan-puppy">(3 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class=" py-4">
+<div class="row">
+<div class="col-md-6"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description1.jpg?v=1592971240" alt=""></div>
+<div class="col-md-6 info2">
+<div>
+<h3>Calf-length dress in airy, textured cotton fabric with a printed pattern</h3>
+<p>Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id, varius estibulum ante ipsum primis in faucibus</p>
+</div>
+<a><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description2.jpg?v=1592971240" alt=""></a>
+</div>
+</div>
+</div>
+<div class=" py-4 des-info">
+<div class="text-center">
+<h3>Product Details</h3>
+<p>Inspired by traditional blockprinting techniques in India, our own in-house design is the vibrant pattern that every closet needs. That's why we crafted our party standout tiered maxi dress in this royal blue-and-yellow print: It's lightweight, lined and will look great at all your most festive summer events.</p>
+</div>
+</div>
+<a class="d-block py-3"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description3.jpg?v=1592971239" alt=""> </a></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$10-$15</s:tag>
+    <s:tag>$15-$20</s:tag>
+    <s:tag>Big</s:tag>
+    <s:tag>Medium</s:tag>
+    <s:tag>small</s:tag>
+    <s:tag>yellow</s:tag>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362815238311</id>
+      <title>small / yellow</title>
+      <s:price currency="USD">12.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362815238311</id>
+      <title>Medium / yellow</title>
+      <s:price currency="USD">16.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362815238311</id>
+      <title>Big / yellow</title>
+      <s:price currency="USD">18.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://foodry-store-demo.myshopify.com/products/5362815172775</id>
+    <published>2020-06-21T21:58:58-04:00</published>
+    <updated>2020-06-21T21:58:58-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/products/pedigree-dentastix"/>
+    <title>French fries</title>
+    <s:type></s:type>
+    <s:vendor>Foodry</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0414/0069/6999/products/7.jpg?v=1593231556"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Foodry<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            18.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class=" py-4">
+<div class="row">
+<div class="col-md-6"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description1.jpg?v=1592971240" alt=""></div>
+<div class="col-md-6 info2">
+<div>
+<h3>Calf-length dress in airy, textured cotton fabric with a printed pattern</h3>
+<p>Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id, varius estibulum ante ipsum primis in faucibus</p>
+</div>
+<a><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description2.jpg?v=1592971240" alt=""></a>
+</div>
+</div>
+</div>
+<div class=" py-4 des-info">
+<div class="text-center">
+<h3>Product Details</h3>
+<p>Inspired by traditional blockprinting techniques in India, our own in-house design is the vibrant pattern that every closet needs. That's why we crafted our party standout tiered maxi dress in this royal blue-and-yellow print: It's lightweight, lined and will look great at all your most festive summer events.</p>
+</div>
+</div>
+<a class="d-block py-3"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description3.jpg?v=1592971239" alt=""> </a></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$15-$20</s:tag>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362815172775</id>
+      <title>Default Title</title>
+      <s:price currency="USD">18.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://foodry-store-demo.myshopify.com/products/5362815041703</id>
+    <published>2020-06-21T21:58:55-04:00</published>
+    <updated>2020-06-21T21:58:55-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/products/norwegian-forest-cat"/>
+    <title>Pizza</title>
+    <s:type></s:type>
+    <s:vendor>Foodry</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0414/0069/6999/products/17_6a5686ee-1e32-407f-88af-98a1f53b5e1c.jpg?v=1592981027"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Foodry<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            12.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class=" py-4">
+<div class="row">
+<div class="col-md-6"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description1.jpg?v=1592971240" alt=""></div>
+<div class="col-md-6 info2">
+<div>
+<h3>Calf-length dress in airy, textured cotton fabric with a printed pattern</h3>
+<p>Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id, varius estibulum ante ipsum primis in faucibus</p>
+</div>
+<a><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description2.jpg?v=1592971240" alt=""></a>
+</div>
+</div>
+</div>
+<div class=" py-4 des-info">
+<div class="text-center">
+<h3>Product Details</h3>
+<p>Inspired by traditional blockprinting techniques in India, our own in-house design is the vibrant pattern that every closet needs. That's why we crafted our party standout tiered maxi dress in this royal blue-and-yellow print: It's lightweight, lined and will look great at all your most festive summer events.</p>
+</div>
+</div>
+<a class="d-block py-3"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description3.jpg?v=1592971239" alt=""> </a></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$10-$15</s:tag>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362815041703</id>
+      <title>Default Title</title>
+      <s:price currency="USD">12.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://foodry-store-demo.myshopify.com/products/5362814910631</id>
+    <published>2020-06-21T21:58:52-04:00</published>
+    <updated>2020-06-21T21:58:52-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/products/dry-dog-food"/>
+    <title>Pizza Affiliate</title>
+    <s:type></s:type>
+    <s:vendor>Foodry</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0414/0069/6999/products/16_dce5a441-c35a-457a-8f4d-d07a359a2bcf.jpg?v=1592980891"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Foodry<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            15.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class=" py-4">
+<div class="row">
+<div class="col-md-6"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description1.jpg?v=1592971240" alt=""></div>
+<div class="col-md-6 info2">
+<div>
+<h3>Calf-length dress in airy, textured cotton fabric with a printed pattern</h3>
+<p>Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id, varius estibulum ante ipsum primis in faucibus</p>
+</div>
+<a><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description2.jpg?v=1592971240" alt=""></a>
+</div>
+</div>
+</div>
+<div class=" py-4 des-info">
+<div class="text-center">
+<h3>Product Details</h3>
+<p>Inspired by traditional blockprinting techniques in India, our own in-house design is the vibrant pattern that every closet needs. That's why we crafted our party standout tiered maxi dress in this royal blue-and-yellow print: It's lightweight, lined and will look great at all your most festive summer events.</p>
+</div>
+</div>
+<a class="d-block py-3"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description3.jpg?v=1592971239" alt=""> </a></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$15-$20</s:tag>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362814910631</id>
+      <title>Default Title</title>
+      <s:price currency="USD">15.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://foodry-store-demo.myshopify.com/products/5362814812327</id>
+    <published>2020-06-21T21:58:49-04:00</published>
+    <updated>2020-06-21T21:58:49-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://foodry-store-demo.myshopify.com/products/almo-nature-daily"/>
+    <title>Chese Classic Burger Boosted Sale</title>
+    <s:type></s:type>
+    <s:vendor>Foodry</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0414/0069/6999/products/2.jpg?v=1592981075"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Foodry<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            10.00 - 14.00
+            <a href="https://foodry-store-demo.myshopify.com/products/almo-nature-daily">(3 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class=" py-4">
+<div class="row">
+<div class="col-md-6"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description1.jpg?v=1592971240" alt=""></div>
+<div class="col-md-6 info2">
+<div>
+<h3>Calf-length dress in airy, textured cotton fabric with a printed pattern</h3>
+<p>Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id, varius estibulum ante ipsum primis in faucibus</p>
+</div>
+<a><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description2.jpg?v=1592971240" alt=""></a>
+</div>
+</div>
+</div>
+<div class=" py-4 des-info">
+<div class="text-center">
+<h3>Product Details</h3>
+<p>Inspired by traditional blockprinting techniques in India, our own in-house design is the vibrant pattern that every closet needs. That's why we crafted our party standout tiered maxi dress in this royal blue-and-yellow print: It's lightweight, lined and will look great at all your most festive summer events.</p>
+</div>
+</div>
+<a class="d-block py-3"><img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/description3.jpg?v=1592971239" alt=""> </a></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$10-$15</s:tag>
+    <s:tag>$15-$20</s:tag>
+    <s:tag>$5-$10</s:tag>
+    <s:tag>Big</s:tag>
+    <s:tag>Medium</s:tag>
+    <s:tag>small</s:tag>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362814812327</id>
+      <title>small</title>
+      <s:price currency="USD">10.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362814812327</id>
+      <title>Medium</title>
+      <s:price currency="USD">12.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://foodry-store-demo.myshopify.com/products/5362814812327</id>
+      <title>Big</title>
+      <s:price currency="USD">14.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+</feed>

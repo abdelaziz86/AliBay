@@ -1,0 +1,180 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %}
+	<title>Produits</title>
+
+{% endblock %}
+
+
+{% block body %}
+
+<style>
+	.imageProd {
+		height : 90px ; 
+		width : 90px ; 
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	}
+
+	.displayers{
+	
+	}
+
+	@media screen and (max-width: 600px) {
+		.imageProd {
+			height : 60px ; 
+			width : 60px ;  
+		}
+
+		.displayers {
+			display : none ; 
+		}
+	}
+
+	.buttProd{
+		padding : 6px ; 
+		border-radius : 20px ; 
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 3px;
+		color : white ; padding : 6px ;    
+		border-radius: 5px ; 
+		text-decoration:none ;
+
+	}
+	
+	
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- ============================================================== -->
+	<!-- Start right Content here -->
+	<!-- ============================================================== -->
+		<div class="main-content"> <div class="page-content">
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col-12">
+						<div class="card">
+							<div
+								class="card-header">
+								<!--=== back button ====== -->
+								<a href="{{ path('admin')}} " type="button" class="btn btn-primary waves-effect waves-light">
+									Retour
+								</a>
+								<a href="{{ path('ajouterProduit')}} " type="button" class="btn btn-success waves-effect waves-light">
+									Ajouter
+								</a>
+								<br>
+								<br>
+
+								 
+
+								<!-- ============ TABLE CATEGS ================== -->
+								  
+
+
+
+
+
+							<div class="row">
+								<div class="col-12">
+									<!--div class="card"-->
+									<div>
+										<div class="card-header">
+											<h2 >Produits</h2>
+											<p class="card-title-desc">
+												Remplissez la table avec vos produits.
+											</p>
+											<br>
+											<table>
+												<tr>
+													<td> <div style="height : 15px ; width : 15px ; background-color : #BEECD5"></div></td>
+													<td>Produit disponible</td>
+												</tr>		
+												<tr>
+													<td> <div style="height : 15px ; width : 15px ; background-color : #E1B8B8"></div> </td>
+													<td> Produit indisponible</td>
+												</tr>
+											</table>
+											 
+										</div>
+										<!--div class="card-body"-->
+											<table id="datatable" class="table table-bordered dt-responsive   w-100">
+												<thead>
+													<tr style="font-size : 16px">
+														<th>Image</th>
+														<th>Nom</th>
+														<!--th>Dispo</th-->
+														<span class="displayers">
+															<th>Visites</th>
+														</span>
+														<th>Action</th>
+
+													</tr>
+												</thead>
+
+
+												<tbody>
+													{% for p in produits %}
+														{% if p.disponible == 1 %}
+															<tr style="font-weight:bold ; color : black ; background-color : #BEECD5">
+														{% else %}
+															<tr style="font-weight:bold ; color : black ; background-color : #E1B8B8 ">
+														{% endif %}
+															<td> <img class="imageProd" src={{asset('uploads/Produit/') ~ p.image}}> </td>
+															<td>{{p.name}}</td>
+													
+															<span class="displayers">
+																<td>{{p.visits}}</td>
+															</span>
+															<td>
+																<a href="{{"/modifierProduit?id=" ~ p.id}}" class="buttProd" style="background-color : orange ; padding-right : 0px !important ; margin-right : 10px ">
+																	<i class="fa fa-edit " style="font-size : 18px" ></i>
+																</a>
+
+																<a href="{{"/DeleteProduit?id=" ~ p.id}}" class="buttProd" style="background-color : red ; ">
+																	<i class="fa fa-trash-o" style="font-size : 18px"></i>
+																</a>
+ 
+																<!--div class="dropdown">
+																	<button class="btn btn-link font-size-16 shadow-none py-0 text-muted dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+																		<i class="bx bx-dots-horizontal-rounded"></i>
+																	</button>
+																	<ul class="dropdown-menu dropdown-menu-end">
+																		<li>
+																			<a class="dropdown-item" href={{"/modifierProduit?id=" ~ p.id}}>Modifier</a>
+																		</li>
+																		<li>
+																			<a class="dropdown-item" href={{"/DeleteProduit?id=" ~ p.id}}>
+																				Supprimer</a>
+																		</li>
+
+																	</ul>
+																</div-->
+															</td>
+														</tr>
+
+													{% endfor %}
+												</tbody>
+											</table>
+										<!--/div-->
+									</div>
+									<!-- end cardaa -->
+								</div>
+								<!-- end col -->
+							</div>
+							<!-- end row -->
+
+								 
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}

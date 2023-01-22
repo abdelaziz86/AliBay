@@ -1,0 +1,120 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %}
+	<title>Produits</title>
+{% endblock %}
+
+
+{% block body %}
+	<!-- ============================================================== -->
+	<!-- Start right Content here -->
+	<!-- ============================================================== -->
+		<div class="main-content"> <div class="page-content">
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col-12">
+						<div class="card">
+							<div
+								class="card-header">
+								<!--=== back button ====== -->
+								<a href="{{ path('produit')}} " type="button" class="btn btn-primary waves-effect waves-light">
+									Retour
+								</a>
+								<br>
+								<br>
+
+								{% if edit == 0 %} 
+									<h2 class="card-title" style="font-size : 20px ; ">Ajouter Produit</h2>
+                                {% elseif edit == 1 %}
+                                    <h2 class="card-title" style="font-size : 20px ; ">Modifier Produit</h2>
+                                    {% for p in produit %}
+                                        <table style="margin-bottom : 20px ; ">
+                                            <tr>
+                                                <td><img style="width : 120px ; height : 130px  ;     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   " src="{{asset('uploads/Produit/') ~ p.image }}"></td>
+                                                <td style=" font-size : 14px; padding-left : 10px ; ">Cet article a été visié :  <span style="color : orange ; "> {{ p.visits }}&nbsp;fois. </span> Partagez votre lien de boutique pour gagner plus de visites.</td>
+                                            </tr>
+                                            
+                                        </table>
+                                        
+                                         
+                                    {% endfor %}
+                                     
+                                {% endif %}
+									<!-- ============ TABLE CATEGS ================== -->
+									{{form_start(formProduit)}}
+
+                                        {{ form_label(formProduit.name,"Nom ") }}
+                                        {{ form_widget(formProduit.name) }}
+                                        <div style="color : red">
+                                            {{ form_errors(formProduit.name) }}
+                                        </div>
+                                        <br>
+
+                                        {{ form_label(formProduit.description,"Description ") }}
+                                        {{ form_widget(formProduit.description, {'required' : false}) }}
+
+                                        <div style="color : red">
+                                            {{ form_errors(formProduit.description) }}
+                                        </div>
+                                        <br>
+
+                                        {{ form_label(formProduit.image,"Image ") }}
+                                        {{ form_widget(formProduit.image, {'required' : false}) }}
+                                        <div style="color : red">
+                                            {{ form_errors(formProduit.image) }}
+                                            {% if app.request('error') is defined %}
+                                              Les extensions acceptés sont : png, jfif, jpeg, gif, jpg.
+                                            {% endif %}
+                                        </div>
+                                        <br>
+
+                                        {{ form_label(formProduit.price,"Prix (DT) ") }}
+                                        {{ form_widget(formProduit.price) }}
+                                        <div style="color : red">
+                                            {{ form_errors(formProduit.price) }}
+                                        </div>
+                                        <br>
+
+                                        {{ form_label(formProduit.disponible,"Disponible ") }}
+                                        {{ form_widget(formProduit.disponible) }}
+                                        <div style="color : red">
+                                            {{ form_errors(formProduit.disponible) }}
+                                        </div>
+                                        <br>
+
+
+                                        {{ form_label(formProduit.featured,"Article de la semaine ") }}
+                                        {{ form_widget(formProduit.featured) }}
+                                        <div style="color : red">
+                                            {{ form_errors(formProduit.featured) }}
+                                        </div>
+                                        <br>
+
+
+
+                                        {{ form_label(formProduit.idCategoryProduit,"Catégorie") }}
+                                        {{ form_widget(formProduit.idCategoryProduit) }}
+                                        <div style="color : red">
+                                            {{ form_errors(formProduit.idCategoryProduit) }}
+                                        </div>
+                                        <br>
+
+
+
+									{{form_end(formProduit)}}
+
+								 
+									 
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}
+
