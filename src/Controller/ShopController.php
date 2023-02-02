@@ -186,12 +186,10 @@ class ShopController extends AbstractController
         $produits = $repo->findBy(array('idShop' => $shop)) ;
 
          
-        $featured = $repo->createQueryBuilder('s')  
-                            ->join('s.idShop', 'r')  
-                            ->where('r.id = '.$shop[0]->getId())  
+        $featured = $repo->createQueryBuilder('s')    
+                            ->where('s.featured = 1 and s.idShop = '.$shop[0]->getId())  
                             ->getQuery()
                             ->getResult() ;
-
         
         $shop2 = $shop[0] ; 
         $shop2->setVisits($shop2->getVisits() + 1) ; 

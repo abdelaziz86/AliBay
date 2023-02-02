@@ -37,6 +37,19 @@ class Shop
      */
     private $image;
 
+
+    /**
+     * @ORM\Column(type="string", length=14, nullable=true)
+     */
+    private $phone;
+
+
+
+    /**
+     * @ORM\Column(type="string", length=100, nullable=true)
+     */
+     private $insta;
+
     /**
      * @ORM\Column(type="integer" , length=500, nullable=true) 
      */
@@ -125,6 +138,40 @@ class Shop
 
         return $this;
     }
+
+    public function getPhone(): ?string
+    {
+        return $this->phone;
+    }
+
+    public function setPhone(?string $phone): self
+    {
+        $this->phone = $phone;
+
+        return $this;
+    }
+
+
+
+
+
+    public function getInsta(): ?string
+    {
+        return $this->insta;
+    }
+
+    public function setInsta(?string $insta): self
+    {
+        $this->insta = $insta;
+
+        return $this;
+    }
+
+
+
+
+
+
 
     public function getStatus(): ?string
     {

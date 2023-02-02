@@ -300,7 +300,22 @@
 																{% endif %}
 										</H5>
 										<H5 style="color : green ; ">
-											Livraison : Non Disponible
+											<br>
+											{% for s in shop %}
+												<a href="{{s.insta}}" target="_blank" style="background: #f09433; color : white;
+												padding : 20px ; padding-top : 10px ; padding-bottom : 10px ; border-radius : 6px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+												background: #f09433;  margin-top : 10px ; margin-bottom : 10px; 
+												background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+												background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+												background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+												filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+												} ">
+
+													Acheter sur Instagram
+												</a> 
+											{% endfor %}
+											<br>
+											<br>
 										</H5>
 									</div>
 
@@ -332,10 +347,11 @@
 
 
 									<li>
-										<div class="item-product-meta-info product-category-info"> <label>Recommendations :</label>
-
-										<a href="/{{p.idShop.name}}?categ={{ p.idCategoryProduit.name }}">{{ p.idCategoryProduit.name }}
-										</a> 
+										{% for s in shop %}
+										<div class="item-product-meta-info product-category-info"> <label>Telephone : {{s.phone}} </label>
+										{% endfor %}					
+										<!--a href="/{{p.idShop.name}}?categ={{ p.idCategoryProduit.name }}">{{ p.idCategoryProduit.name }}
+										</a--> 
 
 									</div>
 								</li>
