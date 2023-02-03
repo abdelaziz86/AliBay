@@ -273,7 +273,7 @@
 									<span data-key="t-dashboard">Dashboard</span>
 								</a>
 							</li>
-
+							{% if owner is not defined %}
 							<li>
 								<a href="{{ path('categorieProduit')}} ">
 									<i data-feather="box"></i>
@@ -287,8 +287,8 @@
 									<span data-key="t-dashboard">Produits</span>
 								</a>
 							</li>
-
-
+							{% endif %}
+							
 							 
 
 						</ul>

@@ -62,6 +62,20 @@ class User implements UserInterface
      */
     private $shops;
 
+
+    /**
+     * @ORM\Column(type="string", length=255,  nullable=true)
+     */
+    private $refered;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $nbrRefs = 0;
+ 
+
+
+
     public function __construct()
     {
         $this->shops = new ArrayCollection();
@@ -110,6 +124,31 @@ class User implements UserInterface
         return $this;
     }
 
+
+    public function getRefered(): ?string
+    {
+        return $this->refered;
+    }
+
+    public function setRefered(string $refered): self
+    {
+        $this->refered = $refered;
+
+        return $this;
+    }
+
+
+    public function getNbrRefs(): ?int
+    {
+        return $this->nbrRefs;
+    }
+
+    public function setNbrRefs(int $nbrRefs): self
+    {
+        $this->nbrRefs = $nbrRefs;
+
+        return $this;
+    }
 
     public function eraseCredentials() {}
     public function getSalt() {}

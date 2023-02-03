@@ -42,6 +42,26 @@ class SecurityController extends AbstractController
         $form->handleRequest($request) ; 
         
         if ($form->isSubmitted() && $form->isValid()) {
+
+            // ============ Check promo code 
+            if ($user->getRefered() != null) {
+                $repo = $this->getDoctrine()->getRepository(User::class) ;  
+                $referal = $repo->findBy(array('username' => $user->getRefered())) ;
+
+                if ($referal == null) {
+                    return $this->render('admin/register.html.twig',[
+                        'form' => $form->createView(),
+                        'error' => 1
+                    ]) ; 
+                } else {
+                    $referal[0]->setNbrRefs($referal[0]->getNbrRefs() + 1) ; 
+                    $em = $this->getDoctrine()->getManager();
+                    $em->persist($referal[0]) ;
+                    $em->flush() ;
+                }
+            }  
+
+
             $hash = $encoder->encodePassword($user, $user->getPassword()) ; 
 
             $user->setPassword($hash) ;
@@ -163,7 +183,8 @@ class SecurityController extends AbstractController
                 
                 return $this->render('admin/dashboard.html.twig', [
                     'shop' => $shop, 
-                    'formShop' => $form->createView()
+                    'formShop' => $form->createView(), 
+                    'user' => $this->security->getUser()
                 ]) ;
             }
 
@@ -182,10 +203,11 @@ class SecurityController extends AbstractController
                 */
             return $this->render('admin/dashboard.html.twig', [
                 'shop' => $shop, 
-                'days' => $days
+                'days' => $days,
+                'user' => $this->security->getUser()
             ]) ;
 
-         } else if ($this->security->isGranted('ROLE_USER')) {
+        } else if ($this->security->isGranted('ROLE_USER')) {
 
             // === navbar
             $repo = $this->getDoctrine()->getRepository(ShopCategory::class) ;  
@@ -195,19 +217,21 @@ class SecurityController extends AbstractController
             $shops = $repo->findAll() ;
 
             $repo = $this->getDoctrine()->getRepository(Produit::class) ; 
-        $produits = $repo->findBy(array('idShop' => 4)) ;
+            $produits = $repo->findBy(array('idShop' => 4)) ;
 
-         
-        $featured = $repo->createQueryBuilder('s')  
+            
+            $featured = $repo->createQueryBuilder('s')  
                             ->join('s.idShop', 'r')  
                             ->where('r.id = 4')  
                             ->getQuery()
                             ->getResult() ;
             // === end navbar           
-             return $this->render('security/home.html.twig',[
+             return $this->render('admin/dashboard.html.twig',[
                 'cats' => $cats,
                 'shops' => $shops,
-                'featured' => $featured
+                'featured' => $featured,
+                'owner'=> $this->security->isGranted('ROLE_ADMIN'),
+                'user' => $this->security->getUser()
              ]) ;
          }
          

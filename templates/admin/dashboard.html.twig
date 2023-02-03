@@ -18,11 +18,27 @@
             <div class="card">
             <div class="card-header">
 
+            {% if owner is defined %}
+                <h2>Bonjour <span style="color : green">{{user.username}}</span>, </h2>
+                <br>
+                <div style="font-size : 20px; font-weight : 500" >Votre Code promo : <span style="color : orange">{{user.username}}</span> </div>
+                <div style="font-size : 20px; font-weight : 500">Total invités : <span style="color : orange">{{user.nbrRefs}}</span> </div>
+                <div style="font-size : 20px ; font-weight : 500">Budget : <span style="color : orange">0 DT</span> </div>
+                <br>
+                <div style="font-size : 20px">Vous gagnez 30% des inscriptions mensuelles de vos invités. 
+                Partagez votre code promo et invitez plus de boutiques. </div>
+                
 
+
+                <hr style="margin-top : 150px ;">
+                <h3> Veuillez Régler vos frais de paiement pour personnaliser une boutique.</h3>
+                <a href="/partenariat" class="btn btn-primary mt-2">Consulter Tarifs</a>
+                 
+            {% else %}    
                 {% if shop == null %}
                     <!-- ============ Ajout SHOP ================= -->
                     <center>
-                        <H1> Bienvenue chez Ali Bey </H1>
+                        <H1> Bienvenue chez Ali Bay </H1>
                         <h5> Veuillez Tout d'abord inscrire votre boutique. </h5>
             
                         <br>
@@ -112,12 +128,20 @@
                                     <a href={{"modifierBoutique?id=" ~ s.id}} style="margin-top : 10px" class="btn btn-success waves-effect waves-light">Modifier Boutique</a>
                                     <a href="/produit" style="margin-top : 10px"  class="btn btn-success waves-effect waves-light">Produits</a>
                                     <a href="/categorieProduit" style="margin-top : 10px"  class="btn btn-success waves-effect waves-light">Categories</a>
+                        <br>
 
+                        <br>
+                        <div style="font-size : 20px; font-weight : 500" >Votre Code promo : <span style="color : orange">{{user.username}}</span> </div>
+                        <div style="font-size : 20px; font-weight : 500">Total invités : <span style="color : orange">{{user.nbrRefs}}</span> </div>
+                        <div style="font-size : 20px ; font-weight : 500">Budget : <span style="color : orange">0 DT</span> </div>
+                        <br>
+                        <div style="font-size : 20px">Vous gagnez 30% des inscriptions mensuelles de vos invités. 
+                        Partagez votre code promo et invitez plus de boutiques. </div>
                         
                          
                     {% endfor %}
                 {% endif %}
-
+            {% endif %}
 
             </div>
 

@@ -50,6 +50,10 @@
                                         
                                 {{form_start(form)}}
                                     {{form_widget(form)}}
+                                    
+                                    {% if error is defined %}
+                                        <div style="color : red">Ce code promo n'existe pas. </div>
+                                    {% endif %}
 
                                     <div class="mb-4">
                                         <p class="mb-0">En vous inscrivant, vous acceptez nos

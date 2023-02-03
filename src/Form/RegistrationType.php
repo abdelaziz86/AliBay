@@ -33,6 +33,14 @@ class RegistrationType extends AbstractType
                 'attr' => [
                     'class'=>'form-control'
                 ]
+            ])
+            ->add('refered', TextType::class,[
+                'attr' => [
+                    'class'=>'form-control' 
+                    
+                ],
+                'label' =>'Code Promo (Optionnel)',
+                'required' => false 
             ]) ; 
         ;
     }

@@ -47,6 +47,31 @@ class ShopController extends AbstractController
         ]);
     }
 
+
+    /**
+     * @Route("/affiliate", name="affiliate")
+     */
+    public function affiliate(): Response
+    {   
+        // === navbar
+        $repo = $this->getDoctrine()->getRepository(ShopCategory::class) ;  
+        $cats = $repo->findAll() ;
+
+        $repo = $this->getDoctrine()->getRepository(Shop::class) ; 
+        $shops = $repo->findAll() ;
+        // === end navbar
+
+         
+                             
+
+        return $this->render('front/affiliate.html.twig', [ 
+            'cats' => $cats,
+            'shops' => $shops
+        ]);
+    }
+
+
+
     /**
      * @Route("/article/{id}", name="detail_produit")
      */
