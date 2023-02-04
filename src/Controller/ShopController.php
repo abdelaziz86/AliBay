@@ -10,11 +10,14 @@ use Symfony\Component\Security\Core\Security;
 use App\Form\ShopType ;
 use App\Entity\User ;
 use App\Entity\Shop ; 
+use App\Entity\Post;
 use App\Entity\CategoryProduit ; 
 use App\Entity\ShopCategory ; 
 use App\Entity\Produit ; 
 use Symfony\Component\Form\Extension\Core\Type\SubmitType ; 
 use Symfony\Component\Filesystem\Filesystem; 
+use App\Form\PostType;
+use Symfony\Component\Validator\Constraints\DateTime ; 
 
 class ShopController extends AbstractController
 {
@@ -44,6 +47,46 @@ class ShopController extends AbstractController
         return $this->render('front/partenariat.html.twig', [ 
             'cats' => $cats,
             'shops' => $shops
+        ]);
+    }
+
+    /**
+     * @Route("/blog", name="blog")
+     */
+    public function blog(Request $request): Response
+    {   
+        // === navbar
+        $repo = $this->getDoctrine()->getRepository(ShopCategory::class) ;  
+        $cats = $repo->findAll() ;
+
+        $repo = $this->getDoctrine()->getRepository(Shop::class) ; 
+        $shops = $repo->findAll() ;
+        // === end navbar
+        $user=$this->security->getUser() ;
+         
+        $post = new Post();
+        $form = $this->createForm(PostType::class, $post) ; 
+        
+        $repo = $this->getDoctrine()->getRepository(Post::class) ;  
+        $posts = $repo->findBy(array(), array('createdAt' => 'DESC') , 10) ;
+
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $post->setUser($user) ;
+            $post->setCreatedAt(new \DateTime('now')) ; 
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($post) ;
+            $em->flush() ; 
+            return $this->redirectToRoute('blog') ;
+            
+        }
+
+        return $this->render('front/blog.html.twig', [ 
+            'cats' => $cats,
+            'shops' => $shops,
+            'user' =>  $user = $this->security->getUser() ,
+            'form' => $form->createView(),
+            'posts' => $posts
         ]);
     }
 

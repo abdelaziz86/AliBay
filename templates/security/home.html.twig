@@ -408,89 +408,16 @@ arrows: false
 
 </div-->
 <!-- ================= END ARRIVAL =================== -->
-<h1> </h1>
-
-<div id="shopify-section-1591084799956" class="shopify-section index-section">
-	<div data-section-id="1591084799956" data-section-type="section-service-v1" style="  ">
-		<div class="section-service-v1 mt-all">
-			<div class="container container-v1">
-				<div class="row slickjs-services-v1">
-					
-					<div class="col-12 text-center itemtservice justify-content-center">
-						<div class="box-service ">
-
-							<div class="icon">
-								<img src="../cdn.shopify.com/s/files/1/0414/0069/6999/files/334b5.png?v=1592987292">
-							</div>
-
-							<div class="service-content">
-
-								<h4 class="title">100% Satisfait</h4>
+ 
 
 
-								<p class="content">Client satisfait, c'est notre priorité.</p>
 
-							</div>
-							<div class="clearfix"></div>
-						</div>
-					</div>
-
-					<div class="col-12 text-center itemtservice justify-content-center">
-						<div class="box-service ">
-
-							<div class="icon">
-								<img src="../cdn.shopify.com/s/files/1/0414/0069/6999/files/189d2.png?v=1592987227">
-							</div>
-
-							<div class="service-content">
-
-								<h4 class="title">Rapide & Efficace</h4>
-
-
-								<p class="content">Solution informatique rapide et moderne.</p>
-
-							</div>
-							<div class="clearfix"></div>
-						</div>
-					</div>
-
-
-					<div class="col-12 text-center itemtservice justify-content-center">
-						<div class="box-service ">
-
-							<div class="icon">
-								<img src="../cdn.shopify.com/s/files/1/0414/0069/6999/files/217a8.png?v=1592987237">
-							</div>
-
-							<div class="service-content">
-
-								<h4 class="title">Assistance 24/7</h4>
-
-
-								<p class="content">Utilisation guidée et assistance disponible 24/7.</p>
-
-							</div>
-							<div class="clearfix"></div>
-						</div>
-					</div>
-
-
-					
-
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-</div></div>
 
 
 
 <!-- ================= FEATURED PRODUCTS ====================== -->
 
-<div id="shopify-section-1592215379002" class="shopify-section" style="margin-top : 0px ; margin-bottom : 100px ;  background-image: linear-gradient(to right, #ACF6F4 , #9CCBCA);">
+<div id="shopify-section-1592215379002" class="shopify-section" style="margin-top : -10px ; margin-bottom : 10px ;  background-image: linear-gradient(to right, #ACF6F4 , #9CCBCA);">
 
 
 
@@ -505,7 +432,7 @@ arrows: false
 					<div class="container container-v1">
 						<div class=" heading text-center">
 
-							<h3 class="mb-0 title_heading" style="margin-top : 30px ; ">Recommendations</h3>
+							<h3 class="mb-0 title_heading" style="margin-top : 30px ; ">Sponsorisés</h3>
 							<hr>
 						</div>
 
@@ -666,9 +593,11 @@ arrows: false
 
 
 
-<!-- ================= FEATURED PRODUCTS ====================== -->
 
-<div id="shopify-section-1592215379002" class="shopify-section" style="margin-top : 0px ; margin-bottom : 100px ;   ">
+
+<!-- ================= Partenariat ====================== -->
+
+<div id="shopify-section-1592215379002" class="shopify-section" style="margin-top : 0px ; margin-bottom : 20px ;   ">
 	<div data-section-id="1592215379002" data-section-type="section-flash-sale">
 
 		<div class="mt-all">
@@ -835,6 +764,117 @@ arrows: false
 
 <!-- ================== END FEATURED ===================== -->
 
+
+<!-- ======= Blog ======== -->
+<div class="container" style="margin-bottom : 20px">
+	<div class="row">
+		<div class="offset-md-1 col-12 col-md-10">
+			<h3>Découvrir notre
+				<a href="/blog" style="color : blue">Blog</a>.</h>
+		</div>
+	</div>
+	{% for post in posts %}
+		<div class="row" style="margin : 5px ; margin-top : 20px" style="border : 1px solid black ">
+			<div class="offset-md-1 col-12 col-md-10" style="border : 1px solid gray ">
+				<div style="margin-top : 5px">
+					<i class='fa fa-user'></i>
+					{{post.user.username}}
+					{% if post.user.position is not null %}
+						<span style="ont-style: italic; font-size: 12px ; color : red">
+							/{{post.user.position}}
+						</span>
+					{% endif %}
+				</div>
+				<p style="font-style: italic; font-size: 12px ;  color : gray">{{post.createdAt|date("F jS \\a\\t g:ia")}}</p>
+				<p>{{post.contenu}}
+				</p>
+			</div>
+		</div>
+
+	{% endfor %}
+</div>
+
+<!-- ======= end  blog ======= -->
+
+
+
+
+
+<div id="shopify-section-1591084799956" class="shopify-section index-section" style="margin-bottom : 100px">
+	<div data-section-id="1591084799956" data-section-type="section-service-v1" style="  ">
+		<div class="section-service-v1 mt-all">
+			<div class="container container-v1">
+				<div class="row slickjs-services-v1">
+					
+					<div class="col-12 text-center itemtservice justify-content-center">
+						<div class="box-service ">
+
+							<div class="icon">
+								<img src="../cdn.shopify.com/s/files/1/0414/0069/6999/files/334b5.png?v=1592987292">
+							</div>
+
+							<div class="service-content">
+
+								<h4 class="title">100% Satisfait</h4>
+
+
+								<p class="content">Client satisfait, c'est notre priorité.</p>
+
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+
+					<div class="col-12 text-center itemtservice justify-content-center">
+						<div class="box-service ">
+
+							<div class="icon">
+								<img src="../cdn.shopify.com/s/files/1/0414/0069/6999/files/189d2.png?v=1592987227">
+							</div>
+
+							<div class="service-content">
+
+								<h4 class="title">Rapide & Efficace</h4>
+
+
+								<p class="content">Solution informatique rapide et moderne.</p>
+
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+
+
+					<div class="col-12 text-center itemtservice justify-content-center">
+						<div class="box-service ">
+
+							<div class="icon">
+								<img src="../cdn.shopify.com/s/files/1/0414/0069/6999/files/217a8.png?v=1592987237">
+							</div>
+
+							<div class="service-content">
+
+								<h4 class="title">Assistance 24/7</h4>
+
+
+								<p class="content">Utilisation guidée et assistance disponible 24/7.</p>
+
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+
+
+					
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div></div>
 
 
 

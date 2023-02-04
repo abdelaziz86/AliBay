@@ -7,6 +7,7 @@ use App\Entity\User ;
 use App\Entity\Produit;
 use App\Form\ShopType ;
 use App\Entity\ShopCategory;
+use App\Entity\Post ; 
 use App\Form\RegistrationType ; 
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\HttpFoundation\Request;
@@ -104,12 +105,15 @@ class SecurityController extends AbstractController
         $repo = $this->getDoctrine()->getRepository(Produit::class) ; 
         $featuredHome = $repo->findBy(array('featuredHome' => 1)) ;
 
+        $repo = $this->getDoctrine()->getRepository(Post::class) ;  
+        $posts = $repo->findBy(array(), array('createdAt' => 'DESC') , 2) ;
 
         return $this->render('security/home.html.twig', [
             //'featured' => $featured,
             'featuredHome' => $featuredHome,
             'cats' => $cats,
-            'shops' => $shops
+            'shops' => $shops,
+            'posts' => $posts
         ]) ; 
     }
 

@@ -72,13 +72,22 @@ class User implements UserInterface
      * @ORM\Column(type="integer")
      */
     private $nbrRefs = 0;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Post::class, mappedBy="user")
+     */
+    private $posts;
  
 
-
+    /**
+     * @ORM\Column(type="string", length=10,  nullable=true)
+     */
+    private $position;
 
     public function __construct()
     {
         $this->shops = new ArrayCollection();
+        $this->posts = new ArrayCollection();
     } 
 
     
@@ -150,6 +159,18 @@ class User implements UserInterface
         return $this;
     }
 
+    public function getPosition(): ?string
+    {
+        return $this->position;
+    }
+
+    public function setPosition(string $position): self
+    {
+        $this->position = $position;
+
+        return $this;
+    }
+
     public function eraseCredentials() {}
     public function getSalt() {}
     /*public function getRoles() {
@@ -200,6 +221,36 @@ class User implements UserInterface
             // set the owning side to null (unless already changed)
             if ($shop->getIdUser() === $this) {
                 $shop->setIdUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Post>
+     */
+    public function getPosts(): Collection
+    {
+        return $this->posts;
+    }
+
+    public function addPost(Post $post): self
+    {
+        if (!$this->posts->contains($post)) {
+            $this->posts[] = $post;
+            $post->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removePost(Post $post): self
+    {
+        if ($this->posts->removeElement($post)) {
+            // set the owning side to null (unless already changed)
+            if ($post->getUser() === $this) {
+                $post->setUser(null);
             }
         }
 
