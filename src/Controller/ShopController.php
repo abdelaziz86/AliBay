@@ -50,45 +50,7 @@ class ShopController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/blog", name="blog")
-     */
-    public function blog(Request $request): Response
-    {   
-        // === navbar
-        $repo = $this->getDoctrine()->getRepository(ShopCategory::class) ;  
-        $cats = $repo->findAll() ;
-
-        $repo = $this->getDoctrine()->getRepository(Shop::class) ; 
-        $shops = $repo->findAll() ;
-        // === end navbar
-        $user=$this->security->getUser() ;
-         
-        $post = new Post();
-        $form = $this->createForm(PostType::class, $post) ; 
-        
-        $repo = $this->getDoctrine()->getRepository(Post::class) ;  
-        $posts = $repo->findBy(array(), array('createdAt' => 'DESC') , 10) ;
-
-        $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid()) {
-            $post->setUser($user) ;
-            $post->setCreatedAt(new \DateTime('now')) ; 
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($post) ;
-            $em->flush() ; 
-            return $this->redirectToRoute('blog') ;
-            
-        }
-
-        return $this->render('front/blog.html.twig', [ 
-            'cats' => $cats,
-            'shops' => $shops,
-            'user' =>  $user = $this->security->getUser() ,
-            'form' => $form->createView(),
-            'posts' => $posts
-        ]);
-    }
+    
 
 
     /**
@@ -134,7 +96,7 @@ class ShopController extends AbstractController
         $repo = $this->getDoctrine()->getRepository(Shop::class) ; 
         $shop = $repo->findBy(array('id' => $produits[0]->getIdShop())) ;
 
-         $repo = $this->getDoctrine()->getRepository(Produit::class) ; 
+        $repo = $this->getDoctrine()->getRepository(Produit::class) ; 
          
 
          
