@@ -1,0 +1,87 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %}
+	<title>Catégories</title>
+{% endblock %}
+
+
+{% block body %}
+	<!-- ============================================================== -->
+	<!-- Start right Content here -->
+	<!-- ============================================================== -->
+		<div class="main-content"> <div class="page-content">
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col-12">
+						<div class="card">
+							<div
+								class="card-header">
+								<!--=== back button ====== -->
+								<a href="{{ path('categorieProduit')}} " type="button" class="btn btn-primary waves-effect waves-light">
+									Retour
+								</a>
+								<br>
+								<br>
+
+								 
+
+									<h2 class="card-title" style="font-size : 20px ; margin-bottom : 40px ">Modifier Votre Style</h2>
+
+
+									<!-- ============ TABLE CATEGS ================== -->
+									{{form_start(form)}}
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-2 col-6">
+                                                    {{ form_label(form.nameColor,"Name Color ") }}
+                                                    {{ form_widget(form.nameColor) }}
+                                                </div>
+
+                                                <div class="col-md-2 col-6">
+                                                    {{ form_label(form.nameGlow,"Name Glow ") }}
+                                                    {{ form_widget(form.nameGlow) }}
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                            
+                                                <div class="col-md-2" style="margin-top : 30px ; font-size : 18px ;  ">
+                                                Result : 
+                                                {% if user.style is null %}
+                                                    <span>
+                                                {% else%}
+                                                    <span style="color : {{user.style.nameColor}} ; text-shadow: {{user.style.nameGlow}} 1px 0 10px;"> 
+                                                {% endif %}
+                                                    {{user.username}}
+                                                </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                            
+                                                <div class="col-2" style="margin-top : 30px">
+                                                {{form_widget(form.Enregistrer)}}
+                                                </div>
+                                            </div>
+
+                                            
+
+
+
+                                        </div>
+									{{form_end(form)}}
+
+								 
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}
+

@@ -24,7 +24,7 @@ class CategoryProduitType extends AbstractType
                 ]
             ]) 
         ;
-    }
+    } 
 
     public function configureOptions(OptionsResolver $resolver): void
     {

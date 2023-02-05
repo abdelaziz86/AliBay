@@ -29,7 +29,18 @@
 				<div class="offset-md-1 col-12 col-md-10" style="border : 1px solid #E5E5E5 ; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; margin-bottom : 30px">
 					<div style="margin-top : 5px">
 						<i class='fa fa-user'></i>
-						{{post.user.username}}
+						 
+							 
+						{% if post.user.style is null %}
+							<span>
+						{% else%}
+							<span style="color : {{post.user.style.nameColor}} ; text-shadow: {{post.user.style.nameGlow}} 1px 0 10px;"> 
+						{% endif %}
+							{{post.user.username}}
+							</span>
+
+							 
+							  
 						{% if post.user.position is not null %}
 							<span style="ont-style: italic; font-size: 12px ; color : red">
 								/{{post.user.position}}
@@ -73,8 +84,20 @@
             <div class="row" style="margin : 5px ; margin-top : 10px" style="border : 1px solid black ; ">
 				<div class="offset-md-1 col-12 col-md-10" style="border : 1px solid #E5E5E5 ; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; margin-bottom : 30px">
 					<div style="margin-top : 5px">
-						<i class='fa fa-user'></i>
-						{{comment.user.username}}
+						<i class='fa fa-user'></i> 
+
+
+						{% if comment.user.style is null %}
+							<span>
+						{% else%}
+							<span style="color : {{comment.user.style.nameColor}} ; text-shadow: {{comment.user.style.nameGlow}} 1px 0 10px;"> 
+						{% endif %}
+							{{comment.user.username}}
+							</span>
+
+
+
+
 						{% if comment.user.position is not null %}
 							<span style="ont-style: italic; font-size: 12px ; color : red">
 								/{{comment.user.position}}

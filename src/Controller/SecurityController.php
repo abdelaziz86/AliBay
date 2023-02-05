@@ -71,9 +71,17 @@ class SecurityController extends AbstractController
             $em->persist($user) ;
             $em->flush() ; 
             
+
+            $repo = $this->getDoctrine()->getRepository(User::class) ;  
+            $connected = $repo->findBy(array('username' => $user->getUsername())) ;
+             
+            
             return $this->render('admin/login.html.twig', [
                 'new' => 1
             ]) ; 
+
+            //return $this->redirectToRoute('admin') ; 
+
         }
         return $this->render('admin/register.html.twig',[
             'form' => $form->createView()

@@ -778,7 +778,15 @@ arrows: false
 			<div class="offset-md-1 col-12 col-md-10" style="border : 1px solid gray ">
 				<div style="margin-top : 5px">
 					<i class='fa fa-user'></i>
-					{{post.user.username}}
+					
+					{% if post.user.style is null %}
+						<span>
+					{% else%}
+						<span style="color : {{post.user.style.nameColor}} ; text-shadow: {{post.user.style.nameGlow}} 1px 0 10px;"> 
+					{% endif %}
+						{{post.user.username}}
+						</span>
+
 					{% if post.user.position is not null %}
 						<span style="ont-style: italic; font-size: 12px ; color : red">
 							/{{post.user.position}}

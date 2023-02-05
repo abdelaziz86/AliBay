@@ -190,54 +190,7 @@ class ShopController extends AbstractController
 
 
 
-    /**
-     * @Route("/{id}", name="shop")
-     */
-    public function index($id): Response
-    {   
-        // === navbar
-        $repo = $this->getDoctrine()->getRepository(ShopCategory::class) ;  
-        $cats = $repo->findAll() ;
-
-        $repo = $this->getDoctrine()->getRepository(Shop::class) ; 
-        $shops = $repo->findAll() ;
-        // === end navbar
-
-        $repo = $this->getDoctrine()->getRepository(Shop::class) ; 
-        $shop = $repo->findBy(array('name' => $id)) ;
-
-        $repo = $this->getDoctrine()->getRepository(CategoryProduit::class) ; 
-        $categories = $repo->findBy(array('IdShop' => $shop)) ;
-
-        $produits = [] ; 
-
-         
-        $repo = $this->getDoctrine()->getRepository(Produit::class) ; 
-        $produits = $repo->findBy(array('idShop' => $shop)) ;
-
-         
-        $featured = $repo->createQueryBuilder('s')    
-                            ->where('s.featured = 1 and s.idShop = '.$shop[0]->getId())  
-                            ->getQuery()
-                            ->getResult() ;
-        
-        $shop2 = $shop[0] ; 
-        $shop2->setVisits($shop2->getVisits() + 1) ; 
-        $em = $this->getDoctrine()->getManager();
-        $em->persist($shop2) ;
-        $em->flush() ; 
-                             
-
-        return $this->render('front/shop.html.twig', [
-            'shop' => $shop,
-            'produits' => $produits,
-            'categories' => $categories,
-            'featured' => $featured,
-            'cats' => $cats,
-            'shops' => $shops,
-            'status' => $shop[0]->getStatus()
-        ]);
-    }
+    
 
 
 

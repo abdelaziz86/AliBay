@@ -17,6 +17,10 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  *  fields = {"email"},
  *  message = "Adresse Email déjà utilisée."
  * )
+ * @UniqueEntity(
+ *  fields = {"username"},
+ *  message = "Username déjà utilisée."
+ * )
  */
 class User implements UserInterface
 {
@@ -28,7 +32,7 @@ class User implements UserInterface
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255 )  
      */
     private $username;
 
@@ -88,6 +92,12 @@ class User implements UserInterface
      * @ORM\OneToMany(targetEntity=Comment::class, mappedBy="user")
      */
     private $comments;
+
+    /**
+     * @ORM\OneToOne(targetEntity=Style::class, inversedBy="user", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private $style;
 
     public function __construct()
     {
@@ -289,6 +299,18 @@ class User implements UserInterface
                 $comment->setUser(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getStyle(): ?Style
+    {
+        return $this->style;
+    }
+
+    public function setStyle(Style $style): self
+    {
+        $this->style = $style;
 
         return $this;
     }
