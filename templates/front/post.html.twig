@@ -28,6 +28,7 @@
 			<div class="row" style="margin : 5px ; margin-top : 10px" style="border : 1px solid black ; ">
 				<div class="offset-md-1 col-12 col-md-10" style="border : 1px solid #E5E5E5 ; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; margin-bottom : 30px">
 					<div style="margin-top : 5px">
+						<a href="/blog/{{post.user.username}}">
 						<i class='fa fa-user'></i>
 						 
 							 
@@ -47,6 +48,9 @@
 							</span>
 						{% endif %}
 					</div>
+					</a>
+
+
 					<p style="font-style: italic; font-size: 12px ;  color : gray">{{post.createdAt|date("F jS \\a\\t g:ia")}}</p>
 					<p>{{post.contenu}}
 					</p>
@@ -84,6 +88,7 @@
             <div class="row" style="margin : 5px ; margin-top : 10px" style="border : 1px solid black ; ">
 				<div class="offset-md-1 col-12 col-md-10" style="border : 1px solid #E5E5E5 ; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; margin-bottom : 30px">
 					<div style="margin-top : 5px">
+						<a href="/blog/{{post.user.username}}">
 						<i class='fa fa-user'></i> 
 
 
@@ -104,6 +109,9 @@
 							</span>
 						{% endif %}
 					</div>
+					</a>
+
+					
 					<p style="font-style: italic; font-size: 12px ;  color : gray">{{comment.createdAt|date("F jS \\a\\t g:ia")}}</p>
 					<p>{{comment.contenu}}
 					</p>

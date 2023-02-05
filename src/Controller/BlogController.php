@@ -123,6 +123,42 @@ class BlogController extends AbstractController
 
     }
 
+    /**
+     * @Route("/blog/{id}", name="userBlog")
+     */
+    public function userBlog($id): Response
+    {   
+        // === navbar
+        $repo = $this->getDoctrine()->getRepository(ShopCategory::class) ;  
+        $cats = $repo->findAll() ;
+
+        $repo = $this->getDoctrine()->getRepository(Shop::class) ; 
+        $shops = $repo->findAll() ;
+        // === end navbar
+        $repo = $this->getDoctrine()->getRepository(User::class) ; 
+        $user = $repo->findBy(array('username' => $id)) ;
+
+        $repo = $this->getDoctrine()->getRepository(Shop::class) ; 
+        $shop = $repo->findBy(array('idUser' => $user[0])) ;
+
+        $repo = $this->getDoctrine()->getRepository(Post::class) ; 
+        $posts = $repo->findBy(array('user' => $user[0] )) ;
+ 
+                     
+
+        return $this->render('front/user.html.twig', [
+             
+            'cats' => $cats,
+            'shops' => $shops,
+            'user' => $user[0],
+            'posts' => $posts,
+            'shop' => $shop
+
+        ]);
+
+    }
+
+
 }
 
 

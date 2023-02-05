@@ -1,0 +1,115 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+	<title>
+		{{user.username}}
+	</title>
+
+{% endblock %}
+
+{% block body %}
+
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+	<div class="container" style="margin-top : 20px; margin-bottom : 50px">
+
+        <div class="row">
+			<div class="offset-md-1 col-12 col-md-10" >
+                <span style="float : right">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+			    <a href="/blog" > Retour </a>
+                </span>
+            </div>    
+		</div>
+		 
+		<div class="row" style="margin : 5px ; margin-top : 20px ;  ">
+			<div class="offset-md-1 col-12 col-md-10" style="background-color : #DCDCDC; padding : 20px ; border : 1px solid #E5E5E5 ; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; margin-bottom : 30px">
+				<h3> 
+                    <i class='fa fa-user'></i>
+                    {% if user.style is null %}
+                    <span>
+                        {% else%}
+                        <span style="color : {{user.style.nameColor}} ; text-shadow: {{user.style.nameGlow}} 1px 0 10px;">
+                        {% endif %}
+                        {{user.username}}
+                    </span>
+                    {% if user.position is not null %}
+                        <span style="font-size : 15px"> / {{user.position}} </span>
+                    {% endif %}
+                </h3>
+                
+                <div style="color : #363636"> 
+                    <i class="fa fa-id-badge" aria-hidden="true"></i>
+                    Badge <span style="color : red">Coming soon.</span> 
+                </div>
+                
+                <div style="color : #363636"> 
+                    <i class="fa fa-gift" aria-hidden="true"></i>
+                    Code Promo <span style="color : green">{{user.username}}</span> 
+                </div>
+                
+                {% if shop is not null %}
+                    {% for s in shop %}
+                        <div style="color : #363636"> 
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                            Boutique 
+                            <a href="/{{s.name}}" style="color : green">{{s.name}}</a>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+
+			</div>
+		</div>
+
+        {% if posts is empty %}
+            <div class="row" style="margin:5px">
+                <div class="offset-md-1 col-12 col-md-10" style="margin-bottom : 30px">
+                    Cet utilisateur n'a pas encore ajouté aucune publication.
+                </div>
+            </div>
+        {% endif  %}
+
+		{% for post in posts %}
+			<div class="row" style="margin : 5px ; margin-top : 10px"  >
+				<div class="offset-md-1 col-12 col-md-10" style="border : 1px solid #E5E5E5 ; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; margin-bottom : 10px">
+					<div style="margin-top : 5px">
+						<i class='fa fa-user'></i>
+
+						{% if post.user.style is null %}
+							<span>
+								{% else%}
+								<span style="color : {{post.user.style.nameColor}} ; text-shadow: {{post.user.style.nameGlow}} 1px 0 10px;">
+								{% endif %}
+								{{post.user.username}}
+							</span>
+
+
+							{% if post.user.position is not null %}
+								<span style="ont-style: italic; font-size: 12px ; color : red">
+									/{{post.user.position}}
+								</span>
+							{% endif %}
+						</div>
+						<p style="font-style: italic; font-size: 12px ;  color : gray">{{post.createdAt|date("F jS \\a\\t g:ia")}}</p>
+						<p>{{post.contenu}}
+						</p>
+						<br>
+						<div style="float : right ; margin : 5px ; margin-bottom : 10px ; font-size : 15px">
+							<a href="{{path('post', {'id' : post.id })}}">
+								<i class="fa fa-comments"></i>
+								{{post.nbrComments}}
+								Commentaires
+							</a>
+						</div>
+					</div>
+				</div>
+
+			{% endfor %}
+
+
+	</div>
+
+
+	{% endblock %}
+
