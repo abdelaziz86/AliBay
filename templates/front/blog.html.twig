@@ -11,7 +11,7 @@
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
  
-<div class="container" style="margin-top : 50px; margin-bottom : 50px">
+<div class="container" style="margin-top : 80px; margin-bottom : 200px">
 	<div class="row">
 		<div class="offset-md-1 col-12 col-md-8">
 			<h3>AliBay Blog</h3>
@@ -28,7 +28,8 @@
                 		{{ form_widget(form.Publier) }}
 					</div>
 				{{form_end(form)}}
-
+			{% else %}
+				<div><a href="/connexion" style="color : #2B1F6B ; text-decoration : underline">Connectez-vous</a> pour publier ou commenter. </div>
 			{% endif %}
 		</div>
 	</div>
@@ -37,6 +38,16 @@
 	<div class="row" style="margin : 5px ; margin-top : 20px" style="border : 1px solid black ; ">		
 		<div class="offset-md-1 col-12 col-md-10" style="border : 1px solid #E5E5E5 ; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; margin-bottom : 30px">
 			 <div style="margin-top : 5px">  
+
+			 	{% if user is not null %}
+					{% if user.username == post.user.username %}
+					<a href="{{"/DeleteBlog?id=" ~ post.id}}" class="float : right ; font-size : 18px">
+						<i class="fa fa-trash-o"></i>
+					</a>
+					{% endif %}
+				{% endif %}
+
+
 			 	<a href="/blog/{{post.user.username}}">
 				<i class='fa fa-user'></i> 
 
@@ -58,7 +69,7 @@
 
 			</div>
 			 <p style="font-style: italic; font-size: 12px ;  color : gray">{{post.createdAt|date("F jS \\a\\t g:ia")}}</p>
-			 <p>{{post.contenu}} </p>
+			 <p style="color : #5A5959">{{post.contenu}} </p>
 			<br>
 			<div style="float : right ; margin : 5px ; margin-bottom : 10px ; font-size : 15px">
 				<a href="{{path('post', {'id' : post.id })}}">

@@ -22,12 +22,24 @@
             </div>    
 		</div>
 		 
-        
+
+		
+
 		<!-- ==== post ====== -->
         
 			<div class="row" style="margin : 5px ; margin-top : 10px" style="border : 1px solid black ; ">
 				<div class="offset-md-1 col-12 col-md-10" style="border : 1px solid #E5E5E5 ; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; margin-bottom : 30px">
 					<div style="margin-top : 5px">
+
+						{% if user is not null %}
+							{% if user.username == post.user.username %}
+							<a href="{{"/DeleteBlog?id=" ~ post.id}}" class="float : right ; font-size : 18px">
+								<i class="fa fa-trash-o"></i>
+							</a>
+							{% endif %}
+						{% endif %}
+
+
 						<a href="/blog/{{post.user.username}}">
 						<i class='fa fa-user'></i>
 						 
@@ -52,7 +64,7 @@
 
 
 					<p style="font-style: italic; font-size: 12px ;  color : gray">{{post.createdAt|date("F jS \\a\\t g:ia")}}</p>
-					<p>{{post.contenu}}
+					<p style="color : #5A5959">{{post.contenu}}
 					</p>
 					<br>
 					<div style="float : right ; margin : 5px ; margin-bottom : 10px ; font-size : 15px">
@@ -78,7 +90,8 @@
                             {{ form_widget(form.Commenter) }}
                         </div>
                     {{form_end(form)}}
-
+				{% else %}
+					<div><a href="/connexion" style="color : #2B1F6B ; text-decoration : underline">Connectez-vous</a> pour commenter. </div>
                 {% endif %}
             </div>
         </div>
@@ -88,7 +101,7 @@
             <div class="row" style="margin : 5px ; margin-top : 10px" style="border : 1px solid black ; ">
 				<div class="offset-md-1 col-12 col-md-10" style="border : 1px solid #E5E5E5 ; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; margin-bottom : 30px">
 					<div style="margin-top : 5px">
-						<a href="/blog/{{post.user.username}}">
+						<a href="/blog/{{comment.user.username}}">
 						<i class='fa fa-user'></i> 
 
 
@@ -111,9 +124,9 @@
 					</div>
 					</a>
 
-					
+
 					<p style="font-style: italic; font-size: 12px ;  color : gray">{{comment.createdAt|date("F jS \\a\\t g:ia")}}</p>
-					<p>{{comment.contenu}}
+					<p style="color : #5A5959">{{comment.contenu}}
 					</p>
 					<br>
 					 

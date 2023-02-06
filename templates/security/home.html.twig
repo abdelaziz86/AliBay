@@ -770,7 +770,7 @@ arrows: false
 	<div class="row">
 		<div class="offset-md-1 col-12 col-md-10">
 			<h3>Découvrir notre
-				<a href="/blog" style="color : blue">Blog</a>.</h>
+				<a href="/blog" style="color : #2B1F6B ; text-decoration : underline">Blog</a>.</h>
 		</div>
 	</div>
 	{% for post in posts %}
@@ -796,7 +796,7 @@ arrows: false
 					</a>
 				</div>
 				<p style="font-style: italic; font-size: 12px ;  color : gray">{{post.createdAt|date("F jS \\a\\t g:ia")}}</p>
-				<p>{{post.contenu}}
+				<p style="color : #5A5959">{{post.contenu}}
 				</p>
 				<br>
 					<div style="float : right ; margin : 5px ; margin-bottom : 10px ; font-size : 15px">
@@ -810,6 +810,13 @@ arrows: false
 		</div>
 
 	{% endfor %}
+
+	<div class="row" style="display : flex ; justify-content : center; ">
+		<a href="/blog" style="color : #2B1F6B ; font-size : 19px; margin-top : 30px ; text-decoration : underline"> 
+			Afficher Plus. 
+		</a>
+	</div>
+	
 </div>
 
 <!-- ======= end  blog ======= -->

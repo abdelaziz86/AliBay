@@ -12,7 +12,7 @@ use App\Form\PostType ;
 
 use App\Entity\User ;
 use App\Entity\ShopCategory ;
-use App\Entity\Shop;
+use App\Entity\Shop; 
 
 use App\Entity\Comment ; 
 use App\Entity\Post;   
@@ -156,6 +156,43 @@ class BlogController extends AbstractController
 
         ]);
 
+    }
+
+
+    /**
+     * @Route("/DeleteBlog", name="DeleteBlog")
+     */
+    public function DeleteBlogt(Request $request): Response
+    {     
+         
+        if ($this->security->getUser() == null ) 
+        {
+            return $this->redirectToRoute('home') ; 
+
+        }  
+            $repo = $this->getDoctrine()->getRepository(Post::class) ; 
+            $blog = $repo->findBy(array('id' => $request->get('id') , 'user' => $this->security->getUser() )) ;
+            
+            /*$uploads_directory = $this->getParameter('kernel.project_dir').'/public/uploads/Produit';
+            $filesystem = new Filesystem();
+            
+            if ($this->checkNameProduitDifferentThanDefault($produit->getImage())) {
+                $filesystem->remove($uploads_directory.'/'.$produit->getImage());
+            }*/
+            
+            $em = $this->getDoctrine()->getManager() ; 
+
+            foreach($blog[0]->getComments() as $c ) {
+                $em->remove($c) ; 
+            }
+
+            $em->remove($blog[0]) ; 
+            $em->flush() ; 
+
+            return $this->redirectToRoute('userBlog',['id' => $this->security->getUser()->getUsername()]) ; 
+
+         
+        //return $this->render('admin/login.html.twig') ;
     }
 
 
